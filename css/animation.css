@@ -1,0 +1,228 @@
+ /* h1::before {
+        content: "";
+        width: 100px;
+        height: 5px;
+        background: #ddd;
+        display: inline-block;
+        color: black;
+        margin-bottom: 7px;
+        }
+
+        h1::after {
+            content: "";
+            width: 100px;
+            width: 5px;
+            background: #ddd;
+            display: inline-block;
+            color: black;
+        } */
+
+
+ .main {
+     width: 400px;
+     height: 400px;
+     background-color: #706c6c;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+
+ .box1 {
+     border: 1px solid #fff;
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     animation-name: box;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+     animation-timing-function: ease-in-out;
+     margin: 15px;
+ }
+
+ .box2 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box2;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box3 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;  
+     border: 1px solid #fff;
+     animation-name: box3;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box4 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box4;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box5 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box5;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box6 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box6;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box7 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box7;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box8 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box8;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ .box9 {
+     width: 100px;
+     height: 100px;
+     background-color: pink;
+     margin: 15px;
+     border: 1px solid #fff;
+     animation-name: box9;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-delay: 2s;
+ }
+
+ @keyframes box1 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(34, 255, 0);
+     }
+ }
+
+
+ @keyframes box2 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(255, 166, 0);
+     }
+ }
+
+ @keyframes box3 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(255, 102, 0);
+     }
+ }
+
+ @keyframes box4 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(0, 255, 136);
+     }
+ }
+
+ @keyframes box5 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(0, 225, 255);
+     }
+ }
+
+ @keyframes box6 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(0, 123, 255);
+     }
+ }
+
+ @keyframes box7 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(0, 21, 255);
+     }
+ }
+
+ @keyframes box8 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(136, 0, 255);
+     }
+ }
+
+ @keyframes box9 {
+     from {
+         background-color: pink;
+     }
+
+     to {
+         background-color: rgb(234, 0, 255);
+     }
+ }

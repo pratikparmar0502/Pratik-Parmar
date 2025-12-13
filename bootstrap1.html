@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .height {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <div class="visible">...</div> -->
+    <!-- <div class="invisible">...</div> -->
+
+    <section class="d-flex justify-content-center m-3">
+        <h1 class="">Bootstrap <span class="badge bg-secondary">5</span></h1>
+    </section>
+
+    <ul
+        class="shadow-lg d-flex mt-3 ms-3 me-3 justify-content-evenly p-3 position-sticky top-0 bg-secondary border border-1 border-light rounded-pill flex-row">
+        <li><a class="ms-2 p-1 text-decoration-none text-light" href="">Home</a></li>
+        <li><a class="ms-2 p-1 text-decoration-none text-light" href="">Contact</a></li>
+        <li><a class="ms-2 p-1 text-decoration-none text-light" href="">Projects</a></li>
+        <li><a class="ms-2 p-1 text-decoration-none text-light" href="">About</a></li>
+        <li><a class="ms-2 p-1 text-decoration-none text-light" href="">Dropdown</a></li>
+        <li><a class="ms-2 p-1 text-decoration-none text-light" href="">Section</a></li>
+    </ul>
+    <hr>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-3">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Contact</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+    </nav>
+
+    <div class="alert alert-secondary m-3" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+
+    <div class="alert alert-secondary m-3" role="alert">
+        A simple secondary alert with <a href="https://getbootstrap.com/docs/5.0/components/alerts/"
+            class="alert-link">bootstrap alert</a>. Give it a click if you like.
+    </div>
+    <hr>
+
+    <section class="m-3">
+        <p class="text-decoration-line-through">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            corrupti.</p>
+        <p class="text-decoration-underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, corrupti.
+        </p>
+        <p class="lh-lg w-50">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facere fugit repellat? Temporibus ex
+            aut iusto saepe quis explicabo perspiciatis reprehenderit blanditiis ipsam impedit, ad, rerum, aliquid
+            adipisicing elit. Labore, corrupti.</p>
+        <hr>
+        <p class="font-monospace">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur doloremque fuga qui
+            itaque adipisci. Odit harum repellat fugit sint. Quia.</p>
+        <hr>
+        <p class="text-capitalize">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quos.</p>
+        <p class="text-uppercase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quos.</p>
+        <p class="text-lowercase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, quos.</p>
+    </section>
+    <hr>
+
+    <section class="m-3 text-light">
+        <p class="w-25 bg-secondary"> my width is 25</p>
+        <p class="w-50 bg-secondary"> my width is 50</p>
+        <p class="w-75 bg-secondary"> my width is 75</p>
+        <p class="w-100 bg-secondary"> my width is 100</p>
+    </section>
+    <hr>
+
+    <section class="w-100 m-3 text-light" style="height: 300px; width: 300px;">
+        <p class="h-25 d-inline-block bg-secondary"> my height is 25</p>
+        <p class="h-50 d-inline-block bg-secondary"> my height is 50</p>
+        <p class="h-75 d-inline-block bg-secondary"> my height is 75</p>
+        <p class="h-100 d-inline-block bg-secondary"> my height is 100</p>
+    </section>
+    <hr>
+
+    <section class="m-3">
+        <p class="fs-1">hello</p>
+        <p class="fs-2">hello</p>
+        <p class="fs-3">hello</p>
+        <p class="fs-4">hello</p>
+        <p class="fs-5">hello</p>
+        <p class="fs-6">hello</p>
+    </section>
+    <hr>
+
+    <section class="m-3">
+        <p class="fw-bold">Bold text.</p>
+        <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+        <p class="fw-semibold">Semibold weight text.</p>
+        <p class="fw-normal">Normal weight text.</p>
+        <p class="fw-light">Light weight text.</p>
+        <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+        <p class="fst-italic">Italic text.</p>
+        <p class="fst-normal">Text with normal font style</p>
+    </section>
+    <hr>
+
+    <section class="m-3 d-flex flex-row bg-secondary text-warning">
+        <div class="height w-100 p-1 overflow-auto">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit laudantium, inventore tenetur, eum quasi
+                veritatis assumenda, obcaecati aperiam eius neque consequuntur incidunt quod necessitatibus repellat
+                ipsum.
+                Qui dolorum nemo, enim vero deserunt pariatur, minus harum velit quod aspernatur, similique molestiae?
+            </p>
+        </div>
+
+        <div class="height w-100 p-1 overflow-scroll">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit laudantium, inventore tenetur, eum quasi
+                veritatis assumenda, obcaecati aperiam eius neque consequuntur incidunt quod necessitatibus repellat
+                ipsum.
+                Qui dolorum nemo, enim vero deserunt pariatur, minus harum velit quod aspernatur, similique molestiae?
+            </p>
+        </div>
+
+        <div class="height w-100 p-1 overflow-hidden">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit laudantium, inventore tenetur, eum quasi
+                veritatis assumenda, obcaecati aperiam eius neque consequuntur incidunt quod necessitatibus repellat
+                ipsum.
+                Qui dolorum nemo, enim vero deserunt pariatur, minus harum velit quod aspernatur, similique molestiae?
+            </p>
+        </div>
+
+        <div class="height w-100 p-1 overflow-visible">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit laudantium, inventore tenetur, eum quasi
+                veritatis assumenda, obcaecati aperiam eius neque consequuntur incidunt quod necessitatibus repellat
+                ipsum.
+                Qui dolorum nemo, enim vero deserunt pariatur, minus harum velit quod aspernatur, similique molestiae?
+            </p>
+        </div>
+    </section><br><br><br><br><br>
+    <hr>
+
+    <section class="m-3 d-flex flex-row">
+        <div class="">
+            <img src="https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames-1536x1024.jpg"
+                class="w-100 rounded-circle" alt="">
+        </div>
+        <div>
+            <img src="https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames-1536x1024.jpg"
+                class="w-100 rounded-pill" alt="">
+        </div>
+        <div>
+            <img src="https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames-1536x1024.jpg"
+                class="w-100 rounded-top" alt="">
+        </div>
+        <div>
+            <img src="https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames-1536x1024.jpg"
+                class="w-100 rounded-bottom" alt="">
+        </div>
+        <div>
+            <img src="https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames-1536x1024.jpg"
+                class="w-100 rounded-end" alt="">
+        </div>
+        <div>
+            <img src="https://www.pix-star.com/blog/wp-content/uploads/2021/05/digital-photo-frames-1536x1024.jpg"
+                class="w-100 rounded-start" alt="">
+        </div>
+  
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

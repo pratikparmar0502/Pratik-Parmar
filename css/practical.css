@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-1140 {
+    width: 1140px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.padding1 {
+    padding: 60px 0px;
+}
+
+.dark-background {
+    background-color: #000704;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.color {
+    color: whitesmoke;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    color: whitesmoke;
+}
+
+.contact-info {
+    color: whitesmoke;
+    line-height: 43px;
+    font-size: 14px;
+}
+
+.contact-email {
+    color: whitesmoke;
+    padding-right: 20px;
+    padding-left: 7px;
+}
+
+.contact-no {
+    color: whitesmoke;
+    padding-left: 7px;
+}
+
+.social-links {
+    color: rgb(182, 174, 174);
+    display: flex;
+    padding-left: 15px;
+}
+
+.links {
+    padding-left: 670px;
+    font-size: 16px;
+}
+
+.parent-navbar {
+    background-color: rgb(27, 27, 27);
+
+}
+
+.navbar {
+    padding: 10px 0px;
+}
+
+.logo {
+    color: #fff;
+    display: block;
+}
+
+.navmenu ul li a {
+    color: whitesmoke;
+    display: block;
+    padding: 10px;
+}
+
+.navmenu ul li {
+    position: relative;
+}
+
+.navmenu ul li a:hover {
+    color: black;
+    background-color: whitesmoke;
+    transition: 0.5s;
+}
+
+.navmenu ul ul {
+    position: absolute;
+    display: none;
+    border-radius: 7px;
+    width: 180px;
+    box-shadow: 0px 0px 20px rgb(234, 225, 225);
+}
+
+.navmenu ul li:hover>ul {
+    display: block;
+}
+
+.navmenu ul ul ul {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 190px;
+}
+
+.navmenu ul ul ul ul {
+    position: absolute;
+    display: none;
+    border-radius: 7px;
+    width: 180px;
+    box-shadow: 0px 0px 5px rgb(40, 37, 37);
+}
+
+.hero-container {
+    background-color: rgb(27, 27, 27);
+    padding: 50px 5px;
+}
+
+.p-15 {
+    padding: 0px 15px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.hero-section {
+    background-color: rgb(27, 27, 27);
+}
+
+.hero-badge {
+    font-size: 14px;
+    background-color: green;
+    color: whitesmoke;
+    /* margin-bottom: 50px; */
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.h-1 {
+    font-size: 40px;
+    color: whitesmoke;
+    line-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.p-1 {
+    color: rgb(246, 235, 235);
+    margin-bottom: 30px;
+    width: 450px;
+    font-weight: 300;
+}
+
+.btn-services {
+    color: whitesmoke;
+    background-color: green;
+    padding: 12px 30px;
+    border-radius: 25px;
+}
+
+.btn-services:hover {
+    box-shadow: 0px 0px 5px white;
+    transition: 0.7s;
+}
+
+.btn-demo {
+    color: green;
+    /* line-height: 50px; */
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 40px;
+}
+
+.demo {
+    font-size: 20px;
+    padding: 5px 5px 5px 10px;
+}
+
+.stat-items {
+    width: 33%;
+    padding: 5px;
+}
+
+.stat-number {
+    font-size: 30px;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.stat-label {
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.hero-actions {
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    border: 1px solid whitesmoke;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-card:hover {
+    box-shadow: 0px 0px 5px white;
+    transition: 0.7s;
+}
+
+.icon {
+    display: block;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parent-feature {
+    padding: 0px 10px;
+    margin: 20px 0px 10px 0px;
+}
+
+.feature-card span {
+    font-size: 14px;
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.about-section {
+    padding: 0px 10px;
+}
+
+.img-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img-1 {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content {
+    padding-right: 10px;
+}
+
+.h-2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.p-2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.p-3,
+.p-4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.label-2 {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.padding-10 {
+    padding: 0px 10px;
+}
+
+.about-footer {
+    color: whitesmoke;
+}
+
+.btn-1 {
+    background-color: green;
+    color: whitesmoke;
+    padding: 11px 21px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn-2 {
+    color: green;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 2px solid green;
+    margin-left: 20px;
+}
+
+.btn-2:hover {
+    background-color: green;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.light-background {
+    background-color: whitesmoke;
+}
+
+.service-title {
+    padding: 0px 15px 40px 15px;
+}
+
+.h-3 {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.p-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-2 {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.p-7 {
+    display: inline;
+    padding: 7px;
+    font-size: 15px;
+    color: green;
+    background-color: rgb(237, 246, 228);
+}
+
+.h-4 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.p-6 {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.btn-3-parent {
+    margin-top: 20px;
+    background-color: green;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.btn-3 {
+    margin-top: 20px;
+    padding-right: 7px;
+    font-size: 15px;
+}
+
+.icon-2 {
+    margin-top: 20px;
+    font-size: 14px;
+}

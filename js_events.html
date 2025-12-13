@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events</title>
+</head>
+
+<body>
+    <h1>Javascript events</h1>
+
+    <button id="btn1"> Click </button>
+    <button id="btn2"> Double Click </button>
+    <button id="btn3"> Mousedown/up </button>
+    <button id="btn4"> Mouseover/out </button>
+    <button id="btn5"> Mousemove </button>
+    <button id="btn6"> Keypress </button>
+    <button id="btn7"> Keyup/down </button>
+    <script>
+        // click
+
+        let newbtn1 = document.getElementById("btn1");
+
+        newbtn1.addEventListener("click", function () {
+            alert("button was clicked !!!");
+        });
+
+        // double click
+
+        let newbtn2 = document.getElementById("btn2");
+
+        newbtn2.addEventListener("dblclick", function () {
+            alert("button was double clicked !!!");
+        });
+
+        // mousedown
+
+        let newbtn3 = document.getElementById("btn3");
+
+        newbtn3.addEventListener(
+            "mousedown", function () {
+                document.getElementById("btn3").style.backgroundColor = "red";
+                document.getElementById("btn3").style.color = "white";
+            }
+        )
+
+        // mouseup
+
+        let newbtn4 = document.getElementById("btn3");
+
+        newbtn4.addEventListener(
+            "mouseup", function () {
+                document.getElementById("btn3").style.backgroundColor = "yellow";
+                document.getElementById("btn3").style.color = "black";
+            }
+        )
+
+        // mouseover
+
+        let newbtn5 = document.getElementById("btn4");
+
+        newbtn5.addEventListener(
+            "mouseover", function () {
+                document.getElementById("btn4").style.backgroundColor = "aqua";
+            }
+        )
+
+        // mouseout
+
+        let newbtn6 = document.getElementById("btn4");
+
+        newbtn6.addEventListener(
+            "mouseout", function () {
+                document.getElementById("btn4").style.backgroundColor = "black";
+                document.getElementById("btn4").style.color = "white";
+            }
+        )
+
+        // mousemove
+
+        let newbtn7 = document.getElementById("btn5");
+
+        newbtn7.addEventListener(
+            "mousemove", function () {
+                document.getElementById("btn5").style.backgroundColor = "black";
+                document.getElementById("btn5").style.color = "white";
+            }
+        )
+
+        // keypress
+
+        let newbtn8 = document.getElementById("btn6");
+
+        newbtn8.addEventListener(
+            "keypress", function () {
+                document.getElementById("btn6").style.backgroundColor = "black";
+                document.getElementById("btn6").style.color = "white";
+            }
+        )
+
+        // keyup
+
+        let newbtn9 = document.getElementById("btn7");
+
+        newbtn9.addEventListener(
+            "keyup", function () {
+                document.getElementById("btn7").style.backgroundColor = "yellow";
+                document.getElementById("btn7").style.color = "black";
+            }
+        )
+
+        // keydown
+
+        let newbtn10 = document.getElementById("btn7");
+
+        newbtn10.addEventListener(
+            "keydown", function () {
+                document.getElementById("btn7").style.backgroundColor = "black";
+                document.getElementById("btn7").style.color = "white";
+            }
+        )
+
+    </script>
+</body>
+
+</html>

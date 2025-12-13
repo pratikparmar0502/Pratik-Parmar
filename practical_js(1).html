@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta getdata1="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical JavaScript</title>
+
+    <style>
+      * {
+        text-decoration: none;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input
+        type="text"
+        getdata1=""
+        id="getdata1"
+        placeholder="Enter your name"
+      />
+      <br /><br />
+      <input
+        type="number"
+        getdata1=""
+        id="getdata2"
+        min="1"
+        max="100"
+        placeholder="Age"
+      /><br /><br />
+      <input
+        type="email"
+        getdata1=""
+        id="getdata3"
+        placeholder="Enter your email"
+      /><br /><br />
+      <input
+        type="password"
+        getdata1=""
+        id="getdata4"
+        minlength="8"
+        maxlength="16"
+        placeholder="Enter your password"
+      /><br /><br />
+      <button id="btn-insert" onclick="insertdata()">Insert</button>
+
+      <ul id="setdata"></ul>
+    </div>
+
+    <script>
+      function insertdata() {
+        let data1 = document.getElementById("getdata1").value;
+        let data2 = document.getElementById("getdata2").value;
+        let data3 = document.getElementById("getdata3").value;
+        let data4 = document.getElementById("getdata4").value;
+        // console.log(data1);
+
+        let newdata = document.createElement("li");
+        // console.log(newdata);
+
+        newdata.innerHTML =
+          data1 +
+          "<br>" +
+          data2 +
+          "<br>" +
+          data3 +
+          "<br>" +
+          data4 +
+          "<br>" +
+          "<button onclick = 'updatedata(this)'>Update </button>" +
+          "&nbsp" +
+          "<button onclick = 'deletedata(this)'>Delete </button>";
+        // console.log(newdata);
+
+        document.getElementById("setdata").append(newdata);
+
+        document.getElementById("getdata1").value = "";
+        document.getElementById("getdata2").value = "";
+        document.getElementById("getdata3").value = "";
+        document.getElementById("getdata4").value = "";
+        if (data1 === "" || data2 === "" || data3 === "" || data4 === "") {
+          alert("Please fill all details!!!");
+          newdata.remove();
+        }
+      }
+
+      function updatedata(u) {
+        let update = u.parentElement;
+
+        let j = 1;
+        for (i = 0; i <= 8; i = i + 2) {
+          let olddata = update.childNodes[i].textContent;
+          while (j < 5) {
+            let newdata = (document.getElementById("getdata" + j).value =
+              olddata);
+            j++;
+            break;
+          }
+          update.remove();
+        }
+      }
+
+      function deletedata(d) {
+        d.parentElement.remove();
+      }
+    </script>
+  </body>
+</html>

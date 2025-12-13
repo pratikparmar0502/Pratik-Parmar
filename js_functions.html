@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>js funcitons</title>
+</head>
+
+<body>
+  <script>
+    // Functions
+
+    // var data = function () {
+    //   console.log("hello world");
+    // };
+
+    // data();
+
+    // (function () {
+    //   console.log("hello world");
+    // }());
+
+    // callback function
+
+    // function data(name, callback) {
+    //   document.write(name + "hello world");
+    //   callback();
+    // }
+
+    // function text() {
+    //   document.write("hello text");
+    // }
+
+    // data("hello", text);
+
+    //   closer funciton
+
+    // function data() {
+    //   console.log("hello world");
+
+    //   return function data1() {
+    //     console.log("this is text function");
+    //   };
+    // }
+    // var st = data();
+    // st();
+
+    // var data = [10, 20, 30, 40];
+
+    // var [a, b, ...text] = data;
+
+    // console.log(a);
+    // console.log(b);
+    // console.log(text);
+
+    //   Objects
+
+    //   let data = {
+    //     name: "world",
+    //     surname: "hello",
+    //   };
+    // console.log(data.name,data.surname);
+    //   delete data.name;
+    //   console.log(data);
+
+    //   let data = [
+    //     {
+    //       name: "hello",
+    //       surname: "world",
+    //     },
+    //     {
+    //       name: "hello1",
+    //       surname: "world1",
+    //     },
+    //     {
+    //       name: "hello2",
+    //       surname: "world2",
+    //     },
+    //   ];
+    //   console.log(data);
+
+    function data() {
+      document.write("hello world \n <br>");
+    }
+
+    setTimeout(data, 1000);
+    var set = setInterval(data, 1000);
+    document.write(set);
+
+    function change() {
+      clearInterval(set);
+    }
+  </script>
+  <button onclick="change()">Click me</button>
+</body>
+
+</html>

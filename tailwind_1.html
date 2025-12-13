@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind css</title>
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-sans">
+    <header class="w-full bg-red-300 sticky top-0">
+      <div
+        class="container mx-auto px-4 flex justify-between items-center py-2 font-semibold"
+      >
+        <a href="#" class="block py-3 text-stone-50 font-bold text-3xl"
+          >Travel Time</a
+        >
+        <nav class="py-3">
+          <ul class="flex items-center">
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-[#F95E4D] transition duration-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >Tours</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >Gallary</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >Blog</a
+              >
+            </li>
+            <li class="relative group hover:text-[#F95E4D]">
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >More Pages <i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul
+                class="hidden absolute group-hover:block bg-red-300 rounded-lg px-1 w-42 top-10"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Destination Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Tour Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Booking Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Blog Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Terms</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Privacy</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >Dropdown <i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul
+                class="absolute hidden group-hover:block top-10 bg-red-300 w-44 px-1 rounded-lg"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Dropdown 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Dropdown 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Dropdown 3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="p-2 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                    >Dropdown 4</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-2 mr-5 block text-stone-50 hover:text-[#F95E4D] transition duration-500"
+                >Contact</a
+              >
+            </li>
+            <a
+              href="#"
+              class="border border-[#F95E4D] rounded-[7px] px-4 py-2 bg-[#F95E4D] hover:bg-red-600 hover:scale-110 text-stone-50 transition duration-500"
+              >Get Started</a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="w-full bg-[url(/bg_img.png)] bg-cover bg-top-center bg-no-repeat"
+      >
+        <div class="container mx-auto py-30">
+          <div class="grid grid-cols-2">
+            <div class="px-5">
+              <div>
+                <h1 class="font-bold text-6xl leading-snug text-stone-50">
+                  Discover the World with Us
+                </h1>
+                <p class="font-semibold text-lg/8 text-stone-50 pt-8">
+                  Explore breathtaking destinations and create unforgettable
+                  memories with our expertly crafted tours.
+                </p>
+              </div>
+              <div class="pt-9">
+                <button type="button">
+                  <a
+                    href="#"
+                    class="block border border-[#F95E4D] rounded-[30px] px-5 py-3 font-semibold bg-[#F95E4D] hover:bg-red-600 text-stone-50 hover:scale-105 transition duration-500"
+                    >Start Exploring</a
+                  >
+                </button>
+                <button type="button" class="ps-4">
+                  <a
+                    href="#"
+                    class="block border-[2px] border-[#F95E4D] rounded-[30px] px-6 py-3 font-semibold bg-stone-50 text-[#F95E4D] hover:scale-105 transition duration-500 hover:text-white hover:bg-[#F95E4D]"
+                    >View Tours</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div
+              class="px-4 bg-red-300 border rounded-2xl text-stone-50 grid grid-cols-2 grid-rows-4"
+            >
+              <div class="col-span-2">
+                <div class="py-3 px-2 font-semibold text-xl">
+                  <label for="Destination" class="w-full">Destination</label>
+                </div>
+                <div class="mx-2">
+                  <input
+                    type="text"
+                    name="Destination"
+                    id="Destination"
+                    placeholder="Where do you want to go?"
+                    required
+                    class="border bg-red-300 rounded-md w-full mx-1 px-3 py-2"
+                  />
+                </div>
+              </div>
+              <div class="">
+                <div class="py-3 px-2 pb-2 font-semibold text-xl">
+                  <label for="Check In">Check In</label>
+                </div>
+                <div class="mx-2">
+                  <input
+                    type="date"
+                    name="Check In"
+                    id="Check In"
+                    class="border bg-red-300 rounded-md w-full px-3 py-2"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="">
+                <div class="py-3 px-2 pb-2 font-semibold text-xl">
+                  <label for="Check Out">Check Out</label>
+                </div>
+                <div class="mx-2">
+                  <input
+                    type="date"
+                    name="Check Out"
+                    id="Check Out"
+                    required
+                    class="border bg-red-300 rounded-md w-full px-3 py-2"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="py-3 px-2 pb-2 font-semibold text-xl">
+                  <label for="Adults">Adults</label>
+                </div>
+                <div class="mx-2">
+                  <input
+                    type="number"
+                    name="Adults"
+                    id="Adults"
+                    min="2"
+                    max="10"
+                    value="2"
+                    required
+                    class="border bg-red-300 rounded-md w-full px-3 py-2"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="py-3 px-2 pb-2 font-semibold text-xl">
+                  <label for="Children">Children</label>
+                </div>
+                <div class="mx-2">
+                  <input
+                    type="number"
+                    name="Children"
+                    id="Children"
+                    min="0"
+                    max="2"
+                    value="0"
+                    required
+                    class="border bg-red-300 rounded-md w-full px-3 py-2"
+                  />
+                </div>
+              </div>
+              <div class="col-span-2 mx-2 mt-4">
+                <button type="button" class="w-full">
+                  <a
+                    href="#"
+                    class="block font-semibold border-[2px] border-[#F95E4D] rounded-[7px] px-4 py-3 bg-[#F95E4D] hover:scale-103 text-stone-50 transition duration-500"
+                    >Search Tours</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full">
+        <div class="container mx-auto py-20">
+          <div class="items-center px-4 grid grid-cols-2">
+            <div class="px-4">
+              <div>
+                <span class="uppercase">about us</span>
+                <h2>Creating Unforgettable Travel Experiences</h2>
+              </div>
+              <div>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam eaque
+                  ipsa quae ab illo inventore veritatis.
+                </p>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores.
+                </p>
+              </div>
+              <div>
+                1
+                <span>Expert local guides in every destination</span>
+                2
+                <span>Customized itineraries for every traveler</span>
+                3
+                <span>24/7 customer support throughout your journey</span>
+              </div>
+            </div>
+             <div class="px-4">2</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+/* .box {
+  width: 250px;
+  height: 250px;
+  background-color: aqua;
+  margin: 100px auto;
+  transition: 2s;
+} */
+/*
+.box:hover {
+  /* transform: scaleX(1.5);
+  transform: scaley(1.5); */
+/* transform: scale(0.5); */
+
+/* transform: rotateX(380deg);
+  transform: rotateY(480deg);
+  transform: rotate(640deg) scale(1.5); */
+
+/* .box:hover {
+  transform: skewX(10deg);
+  transform: skewY(10deg);
+  transform: skew(10deg, 20deg);
+} */
+
+/* .box:hover {
+  transform: translateX(100px);
+  transform: translateY(100px);
+  transform: translate(100px, 100px);
+} */
+
+
+
+.i0,
+.i1,
+.i2,
+.i3,
+.i4,
+.i5,
+.i6,
+.i7,
+.i8,
+.i9,
+.i10,
+.i11,
+.i12,
+.i13,
+.i14 {
+  width: 25%;
+  /* background-color: chartreuse; */
+  
+  background-color: #1abc9c;
+
+}
+
+.i0 img,
+.i1 img,
+.i2 img,
+.i3 img,
+.i4 img,
+.i5 img,
+.i6 img,
+.i7 img,
+.i8 img,
+.i9 img,
+.i10 img,
+.i11 img,
+.i12 img,
+.i13 img,
+.i14 img {
+  width: 100%;
+  display: block;
+}
+
+.i1:hover {
+  transition: 2s;
+  transform: scale(1.3);
+}
+
+.i2:hover {
+  transition: 2s;
+  transform: scaleX(1.4);
+}
+
+.i3:hover {
+  transition: 2s;
+  transform: scale(0.8);
+}
+
+.i4:hover {
+  transition: 2s;
+  transform: scaleX(0.7);
+}
+
+.i5:hover {
+  transition: 2s;
+  transform: translateX(-40px);
+}
+
+.i6:hover {
+  transition: 2s;
+  transform: rotate(20deg);
+}
+
+.i7:hover {
+  transition: 2s;
+  filter: blur(5px);
+}
+
+.i8:hover {
+  transition: 2s;
+  filter: brightness(1.5);
+}
+
+.i9:hover {
+  transition: 2s;
+  filter: contrast(1.5);
+}
+
+.i10:hover {
+  transition: 2s;
+  filter: grayscale(1.5);
+}
+
+.i11:hover {
+  transition: 2s;
+  filter: sepia(1.5);
+}
+
+.i12:hover {
+  transition: 2s;
+  filter: blur(2px) grayscale(2);
+}
+
+.i13:hover {
+  transition: 2s;
+  filter: opacity(0.3);
+}
+
+.i14:hover {
+  transition: 2s;
+  filter: opacity(50%);
+  color: #1abc9c;
+}

@@ -1,0 +1,132 @@
+ /* a:link{
+    color:brown;
+}
+
+a:active{
+    color: rgb(214, 254, 92);
+} 
+
+a:visited {
+    color: black;
+} */
+
+ /* a:hover{
+    color: white;
+    background-color:red;
+} */
+
+ /* li:first-child {
+     color: aqua;
+ } */
+
+ /* li:first-of-type{
+    color: greenyellow;
+ } */
+
+ /* li:last-child {
+     color: aqua;
+ } */
+
+ /* li:last-of-type{
+    color: greenyellow;
+ } */
+
+ /* li:nth-child(even){
+    color: red;
+ } */
+
+ /* li:nth-of-type(odd) {
+     color: aqua;
+ } */
+
+ /* li:nth-last-child(2) {
+     color: aqua;
+ }
+
+ li:nth-last-of-type(even) {
+     color: yellow;
+ } */
+ /* 
+ li:only-child{
+    color: aqua;
+ } */
+
+ /* li:only-of-type{
+    color: aqua;
+ } */
+
+ /* :not(p) {
+     color: aqua;
+ } */
+
+ /* p:empty{
+    color: aqua;
+ } */
+
+ /* input:enabled {
+     color: aqua;
+     background-color: gray;
+ } */
+ /* 
+ input:disabled {
+     color: aqua;
+     background-color: green;
+ } */
+
+ /* input:focus{
+    color: aqua;
+ } */
+
+ /* input:read-only {
+     color: aqua;
+ } */
+
+ /* input:read-write{
+    color: aqua;
+ } */
+
+ /* input:required {
+     color: aqua;
+ } */
+
+ /* input:in-range {
+     color: aqua;
+     background-color: black;
+ }
+
+ input:out-of-range {
+     color: rgb(61, 69, 69);
+     background-color: red;
+ } */
+
+ /* input:valid {
+     color: aqua;
+ }
+
+ input:invalid {
+     color: aqua;
+ } */
+
+ input:optional {
+     color: aqua;
+ }
+
+ /*  Pseudo Elements */
+
+ /* p::first-letter{
+    color: aqua;
+ } */
+
+ /* p::first-line {
+     color: aqua;
+ } */
+
+ /* P::selection {
+     color: aqua;
+     background-color: black;
+ } */
+
+ /* input::placeholder {
+     color: aqua;
+     background-color: blue;
+ } */

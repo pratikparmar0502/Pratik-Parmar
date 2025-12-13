@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .container {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        margin-top: 50px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        font-size: 50px;
+        cursor: pointer;
+      }
+
+      .box:hover {
+        background-color: rgb(222, 219, 219);
+        transition: 0.3s;
+      }
+
+      .reset {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>TIC TAC TOE</h1>
+
+    <div class="container">
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <br />
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <br />
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+    <br />
+
+    <button class="reset">Reset</button>
+
+    <script>
+      const boxes = document.querySelectorAll(".box");
+      let turn = "X";
+
+      boxes.forEach((element) => {
+        element.addEventListener("click", function () {
+          if (element.innerHTML === "") {
+            element.innerHTML = turn;
+            if (turn === "X") {
+              turn = "O";
+            } else {
+              turn = "X";
+            }
+            checkWinner();
+          }
+        });
+      });
+
+      document.querySelector(".reset").addEventListener("click", function () {
+        boxes.forEach((element) => {
+          element.innerHTML = "";
+          turn = "X";
+        });
+      });
+
+      function checkWinner() {
+        if (
+          boxes[0].innerHTML === boxes[1].innerHTML &&
+          boxes[1].innerHTML === boxes[2].innerHTML &&
+          boxes[0].innerHTML !== ""
+        ) {
+          alert(boxes[0].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[3].innerHTML === boxes[4].innerHTML &&
+          boxes[4].innerHTML === boxes[5].innerHTML &&
+          boxes[3].innerHTML !== ""
+        ) {
+          alert(boxes[3].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[6].innerHTML === boxes[7].innerHTML &&
+          boxes[7].innerHTML === boxes[8].innerHTML &&
+          boxes[6].innerHTML !== ""
+        ) {
+          alert(boxes[6].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[0].innerHTML === boxes[3].innerHTML &&
+          boxes[3].innerHTML === boxes[6].innerHTML &&
+          boxes[0].innerHTML !== ""
+        ) {
+          alert(boxes[0].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[1].innerHTML === boxes[4].innerHTML &&
+          boxes[4].innerHTML === boxes[7].innerHTML &&
+          boxes[1].innerHTML !== ""
+        ) {
+          alert(boxes[1].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[2].innerHTML === boxes[5].innerHTML &&
+          boxes[5].innerHTML === boxes[8].innerHTML &&
+          boxes[2].innerHTML !== ""
+        ) {
+          alert(boxes[2].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[0].innerHTML === boxes[4].innerHTML &&
+          boxes[4].innerHTML === boxes[8].innerHTML &&
+          boxes[0].innerHTML !== ""
+        ) {
+          alert(boxes[0].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[2].innerHTML === boxes[4].innerHTML &&
+          boxes[4].innerHTML === boxes[6].innerHTML &&
+          boxes[2].innerHTML !== ""
+        ) {
+          alert(boxes[2].innerHTML + " is the winner.  ");
+          resetgame();
+        } else if (
+          boxes[0].innerHTML !== "" &&
+          boxes[1].innerHTML !== "" &&
+          boxes[2].innerHTML !== "" &&
+          boxes[3].innerHTML !== "" &&
+          boxes[4].innerHTML !== "" &&
+          boxes[5].innerHTML !== "" &&
+          boxes[6].innerHTML !== "" &&
+          boxes[7].innerHTML !== "" &&
+          boxes[8].innerHTML !== ""
+        ) {
+          alert("Draw !!!");
+          resetgame();
+        }
+      }
+
+      function resetgame() {
+        boxes.forEach((element) => {
+          element.innerHTML = "";
+        });
+      }
+    </script>
+  </body>
+</html>

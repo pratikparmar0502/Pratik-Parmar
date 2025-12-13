@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Practical</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/all.min.css" />
+  </head>
+
+  <body class="font-sans">
+    <!-- HEADER SECTION -->
+
+    <header class="w-full sticky top-0 shadow-xl z-10 bg-white">
+      <section class="container mx-auto">
+        <div class="px-4 py-4 flex justify-between items-center">
+          <div class="cursor-pointer">
+            <img
+              src="https://coderthemes.com/landinger/assets/landinger-B3Pu9tr8.svg"
+              alt=""
+              class="w-50"
+            />
+          </div>
+          <div class="">
+            <ul class="flex gap-8">
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="block capitalize text-green-400 transition duration-500 font-medium"
+                  >home <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul
+                  class="hidden absolute group-hover:block shadow-lg w-26 top-6.9 -left-3 rounded-lg bg-white text-black"
+                >
+                  <li>
+                    <a
+                      href="practical_t.html"
+                      class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                      >home 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="home2.html"
+                      class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                      >home 2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                      >home 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium"
+                  >product <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="hidden group-hover:block absolute w-150">
+                  <div
+                    class="grid grid-cols-2 bg-white shadow-lg rounded-lg p-5"
+                  >
+                    <div>
+                      <img
+                        src="https://coderthemes.com/landinger/assets/15-gb4efDx_.svg"
+                        alt=""
+                        class="w-80 rounded-lg"
+                      />
+                    </div>
+                    <div class="flex-col">
+                      <a href="#" class="flex px-6 py-7">
+                        <div class="flex items-center">
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="pl-6">
+                          <div class="text-lg">Seamless Onboarding</div>
+                          <p class="text-base pt-1">Quick,easy-Setup.</p>
+                        </div>
+                      </a>
+                      <a href="#" class="flex px-6 py-4 mt-2">
+                        <div class="flex items-center">
+                          <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="pl-8">
+                          <div class="text-lg">Responsive Design</div>
+                          <p class="text-base pt-1">Perfect on any device.</p>
+                        </div>
+                      </a>
+                      <a href="#" class="flex px-6 py-5 mt-2">
+                        <div class="flex items-center">
+                          <i class="fa-solid fa-indent"></i>
+                        </div>
+                        <div class="pl-8">
+                          <div class="text-lg">Integrated analytics</div>
+                          <p class="text-base pt-1">Real-time insights.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium"
+                  >pages <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="hidden absolute group-hover:block w-110 -left-4">
+                  <div
+                    class="grid grid-cols-3 bg-white text-black rounded-lg shadow-lg"
+                  >
+                    <div class="p-2 w-45">
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >product 1</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >product 2</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >product 3</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >pricing 1</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >pricing 2</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >pricing 3 (ecom)</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >integretion</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >request a demo</a
+                      >
+                    </div>
+                    <div class="p-2 w-35">
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >reviews</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >about</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >careers</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >blog</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >FAQs</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >link in bio</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >coming soon</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >privacy policy</a
+                      >
+                    </div>
+                    <div class="p-2 w-20">
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >hero</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >features</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >statistics</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >CTAs</a
+                      >
+                      <a
+                        href="#"
+                        class="flex items-center capitalize hover:text-green-400 transition duration-500 font-medium py-1 px-3"
+                        >cards</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium"
+                  >account <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul
+                  class="hidden absolute group-hover:block shadow-lg w-50 rounded-lg -left-5 p-2 bg-white text-black"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >login in</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >sign up</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >reset password</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >update password</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >email confirmation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >error 404</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block capitalize hover:text-green-400 bg-white transition duration-500 font-medium py-1 px-3"
+                      >passsword protected</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block capitalize hover:text-green-400 transition duration-500 font-medium"
+                  >contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="">
+              <a
+                href="#"
+                class="inline-block capitalize hover:text-green-400 font-medium transition duration-500 text-xl"
+                >cart</a
+              >
+              <span class="rounded-3xl bg-black text-white px-1">0</span>
+            </div>
+            <button
+              type="button"
+              class="flex capitalize bg-green-300 text-lg ms-3 font-medium rounded-[20px] px-5 py-2 hover:bg-black hover:text-white transition duration-500"
+            >
+              sign in
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="bg-black p-30 w-full">
+      <section class="container">
+        <div class="grid grid-cols-2 px-4 gap-10">
+          <div class="px-5">
+            <span
+              class="rounded-[20px] px-5 py-1 font-semibold text-base bg-green-400"
+              >Revolutionize your workflow</span
+            >
+            <h1
+              class="font-bold text-white text-[55px] [line-height:65px] pt-10"
+            >
+              Intuitive solutions for complex challenges
+            </h1>
+            <p class="text-white pt-10 leading-8 text-base font-medium">
+              Streamline your processes and enhance productivity with our
+              all-in-one solution.
+            </p>
+            <button
+              type="button"
+              class="flex capitalize bg-stone-50 mt-8 text-lg font-medium rounded-[20px] px-5 py-2 hover:bg-green-400 hover:text-black transition duration-500"
+            >
+              try for free
+            </button>
+            <div class="flex-col text-white grid grid-flow-col-dense pt-10">
+              <div class="">
+                <span class="pe-2 text-2xl">
+                  <i class="fa-brands fa-app-store-ios"></i>
+                </span>
+                <span>4.5</span>
+                <span class="text-sm px-3">
+                  <i class="fa-solid fa-star" style="color: yellow"></i>
+                </span>
+                <span class="font-semibold">On App Store</span>
+              </div>
+              <div class="">
+                <span class="pe-2 text-2xl">
+                  <i class="fa-brands fa-google-play"></i>
+                </span>
+                <span>4.5</span>
+                <span class="text-sm px-3">
+                  <i class="fa-solid fa-star" style="color: yellow"></i>
+                </span>
+                <span class="font-semibold">On Play Store</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="https://coderthemes.com/landinger/assets/1-BQ9hKAmV.png"
+              alt=""
+              class="rounded-xl"
+            />
+            <img
+              src="https://coderthemes.com/landinger/assets/16-B4e3LIyM.svg"
+              alt=""
+              class="absolute top-85 left-[360px]"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- PRICE SECTION  -->
+
+    <section class="bg-yellow-50 w-full py-20">
+      <div class="container mx-auto px-3">
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold pt-4">
+            Key features that save time
+          </h1>
+          <p class="text-lg font-normal mt-3 pt-4">
+            Discover our powerful tools designed to streamline your workflow and
+            boost productivity.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-8 gap-10 pt-15">
+          <div class="col-span-5 rounded-3xl bg-white text-black p-12">
+            <div class="grid grid-cols-2 gap-5">
+              <div>
+                <span class="rounded-[100%] bg-green-300 px-4 py-2 text-3xl"
+                  ><i
+                    class="fa-solid fa-square-poll-vertical"
+                    style="color: whitesmoke"
+                  ></i
+                ></span>
+                <p class="font-semibold text-3xl mt-10">
+                  Generate detailed reports with just a few clicks.
+                </p>
+                <p class="font-normal text-[17px] mt-25">
+                  Discover our powerful tools designed to streamline your
+                  workflow and boost productivity.
+                </p>
+              </div>
+              <div class="relative">
+                <div class="">
+                  <img
+                    src="https://coderthemes.com/landinger/assets/2-BXjLFFfl.svg"
+                    alt=""
+                    class="rounded-3xl absolute top-15 -left-4"
+                  />
+                </div>
+                <div class="pt-35 mx-3">
+                  <img
+                    src="https://coderthemes.com/landinger/assets/1-LlsmceSN.png"
+                    alt=""
+                    class="rounded-3xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-3 rounded-3xl bg-gray-900 p-12 text-white">
+            <span class="bg-green-400 rounded-full px-4 py-2 text-3xl">
+              <i class="fa-solid fa-bolt"></i
+            ></span>
+            <p class="font-semibold text-2xl mt-7">
+              Work seamlessly with your team, no matter where they are
+            </p>
+            <div class="pt-25">
+              <div class="">
+                <span
+                  ><i
+                    class="fa-regular fa-circle-check"
+                    style="color: rgb(45, 245, 45)"
+                  ></i
+                ></span>
+                <a href="#" class="font-semibold ps-5 text-lg">Live editing</a>
+              </div>
+              <div class="pt-3">
+                <span
+                  ><i
+                    class="fa-regular fa-circle-check"
+                    style="color: rgb(45, 245, 45)"
+                  ></i
+                ></span>
+                <a href="#" class="font-semibold ps-5 text-lg"
+                  >Instant feedback</a
+                >
+              </div>
+              <div class="pt-3">
+                <span
+                  ><i
+                    class="fa-regular fa-circle-check"
+                    style="color: rgb(45, 245, 45)"
+                  ></i
+                ></span>
+                <a href="#" class="font-semibold ps-5 text-lg"
+                  >Task assignments</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-10 text-black bg-green-300 rounded-3xl mt-10 grid grid-cols-3 items-center gap-5"
+        >
+          <div class="">
+            <h1 class="font-medium text-3xl">
+              Generate detailed reports with just a few clicks.
+            </h1>
+          </div>
+          <div class="flex items-center">
+            <span class="font-bold text-5xl">99%</span>
+            <p class="font-medium text-[17px] ps-4">
+              Track and analyze business reports
+            </p>
+          </div>
+          <div class="flex">
+            <div>
+              <h2 class="font-bold text-5xl">4.8</h2>
+            </div>
+            <div class="ps-5">
+              <div class="text-xl">
+                <span> <i class="fa-solid fa-star text-gray-800"></i></span>
+                <span> <i class="fa-solid fa-star text-gray-800"></i></span>
+                <span> <i class="fa-solid fa-star text-gray-800"></i></span>
+                <span> <i class="fa-solid fa-star text-gray-800"></i></span>
+                <span>
+                  <i class="fa-solid fa-star-half-stroke text-gray-800"></i
+                ></span>
+              </div>
+              <div class="pt-1">
+                <span>Best Rated Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-5">
+          <div class="flex-col pt-5 font-sm">
+            <span class="text-base ps-3 gap-3"
+              ><i class="fa-solid fa-comment"></i> Contact our team for more
+              information.
+            </span>
+            <span>
+              <a href="#" class="underline text-base pr-2 pl-3 font-semibold"
+                >Let's Chat
+              </a>
+              <i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE SECTION -->
+
+    <section class="bg-white w-full py-20">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <p
+            class="bg-green-300 inline-block px-4 font-medium py-1 rounded-2xl"
+          >
+            Easy steps to success
+          </p>
+          <p class="text-5xl font-semibold pt-4">Quick start guide</p>
+        </div>
+        <div class="grid grid-cols-3 gap-8 my-15">
+          <div class="flex items-center">
+            <span class="px-3 py-2 font-bold text-2xl rounded-full bg-green-300"
+              >01</span
+            >
+            <div class="ps-4">
+              <span class="text-xl font-bold">Sign up</span>
+              <p class="mt-3 font-medium">
+                Create your account in seconds and choose your plan.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="px-3 py-2 font-bold text-2xl rounded-full bg-green-300"
+              >02</span
+            >
+            <div class="ps-4">
+              <span class="text-xl font-bold">Integrate and collect data</span>
+              <p class="mt-3 font-medium">
+                Tailor your settings and preferences to fit your business needs.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="px-3 py-2 font-bold text-2xl rounded-full bg-green-300"
+              >03</span
+            >
+            <div class="ps-4">
+              <span class="text-xl font-bold">Invite team</span>
+              <p class="mt-3 font-medium">
+                Add team members and collaborators to get started.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://coderthemes.com/landinger/assets/2-DQzeNNAq.png"
+            alt=""
+            class="rounded-3xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="w-full bg-yellow-50 py-20">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 gap-35">
+          <div>
+            <span
+              class="rounded-[20px] px-5 py-1 font-semibold text-base bg-green-300"
+              >Unlock premium features</span
+            >
+            <h1
+              class="font-semibold text-black text-[55px] [line-height:65px] pt-7"
+            >
+              Fit your business goals
+            </h1>
+            <div class="p-2 mt-10 relative">
+              <img
+                src="https://coderthemes.com/landinger/assets/3-DEEGhWKb.png"
+                alt=""
+                class="rounded-lg shadow-lg"
+              />
+              <img
+                src="https://coderthemes.com/landinger/assets/1-ucif9Qcx.svg"
+                alt=""
+                class="rounded-lg shadow-lg absolute top-30 left-100"
+              />
+            </div>
+            <div class="flex-col pt-5 font-sm">
+              <span class="text-base ps-4 gap-3"
+                ><i class="fa-solid fa-tags"></i> Get 20% off when you choose
+                annual billing.
+              </span>
+              <span>
+                <a href="#" class="underline pr-2 pl-3 font-semibold"
+                  >Visit Pricing
+                </a>
+                <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+          <div class="px-4">
+            <div class="bg-gray-900 text-stone-50 rounded-3xl mt-18">
+              <div class="p-10">
+                <div>
+                  <span class="rounded-[100%] bg-green-300 px-3 py-1 text-2xl"
+                    ><i class="fa-solid fa-bolt"></i
+                  ></span>
+                  <span class="text-2xl font-bold ps-4">Basic Plan</span>
+                </div>
+                <div class="pt-7">
+                  <span class="font-bold text-4xl">$19/</span>
+                  <span class="text-base -ms-1">month</span>
+                </div>
+                <div>
+                  <div class="list-none mt-6">
+                    <li class="py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <span class="font-semibold ps-6"
+                        >Automated reporting</span
+                      >
+                    </li>
+                    <li class="py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <span class="font-semibold ps-6">Basic analytics</span>
+                    </li>
+                    <li class="py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <span class="font-semibold ps-6"
+                        >Real-time collaboration for up to 5 users</span
+                      >
+                    </li>
+                    <li class="py-2">
+                      <i class="fa-solid fa-check"></i>
+                      <span class="font-semibold ps-6">
+                        Customizable dashboards</span
+                      >
+                    </li>
+                  </div>
+                  <button
+                    type="button"
+                    class="block w-full capitalize text-black bg-stone-50 mt-8 text-lg font-medium rounded-[20px] px-5 py-2 hover:bg-green-400 hover:text-black transition duration-500"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white text-black rounded-3xl p-12 mt-15">
+              <div>
+                <span class="rounded-[100%] bg-green-300 px-3 py-1 text-2xl"
+                  ><i class="fa-solid fa-bolt"></i
+                ></span>
+                <span class="text-2xl font-semibold ps-4">Custom Plan</span>
+                <p class="pt-7 font-medium">
+                  Designed for large organizations requiring custom solutions.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="w-full capitalize bg-green-300 text-lg font-medium rounded-[20px] py-2 mt-10 hover:bg-black hover:text-green-500 transition duration-500"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white w-full py-20">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 gap-10">
+          <div>
+            <p class="font-semibold text-5xl leading-15">
+              We drive business success with solutions.
+            </p>
+            <p class="font-normal text-[17px] mt-6">
+              Discover our powerful tools designed to streamline your workflow
+              and boost productivity.
+            </p>
+            <div class="grid grid-cols-2 mt-10">
+              <div>
+                <div class="flex">
+                  <img
+                    src="https://coderthemes.com/landinger/assets/2-C2hgbhv6.png"
+                    alt=""
+                    class="size-15 rounded-full"
+                  />
+                  <div class="grid col-1 ps-4">
+                    <span class="font-semibold">Jane Doe </span>
+                    <span class="">Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="-ms-20">
+                <div class="flex">
+                  <img
+                    src="https://coderthemes.com/landinger/assets/1-D6bexPI2.png"
+                    alt=""
+                    class="size-15 rounded-full"
+                  />
+                  <div class="grid grid-cols-1 ps-4">
+                    <span class="font-semibold">John smith </span>
+                    <span class="">UI/UX Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <a
+                  href="#"
+                  class="inline-block rounded-3xl border px-7 py-3 bg-black text-white font-semibold"
+                  >14_day free trial</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://coderthemes.com/landinger/assets/4-RvdQFJPE.png"
+              alt=""
+              class="rounded-3xl"
+            />
+          </div>
+        </div>
+        <hr class="my-10 text-stone-300" />
+        <div class="grid grid-cols-4 gap-10 mt-18">
+          <div>
+            <div class="font-semibold text-5xl">22+</div>
+            <div class="pt-4 font-normal text-lg">Years of experience</div>
+          </div>
+          <div>
+            <div class="font-semibold text-5xl">105+</div>
+            <div class="pt-4 font-normal text-lg">
+              In-house projects completed
+            </div>
+          </div>
+          <div>
+            <div class="font-semibold text-5xl">35+</div>
+            <div class="pt-4 font-normal text-lg">Awards and counting</div>
+          </div>
+          <div>
+            <div class="font-semibold text-5xl">>10K</div>
+            <div class="pt-4 font-normal text-lg">Satisfied users</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 bg-yellow-50">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <p
+            class="bg-green-300 inline-block px-4 font-medium py-1 rounded-2xl"
+          >
+            Testimonials
+          </p>
+          <p class="text-5xl font-semibold pt-4">
+            Hear from our happy customers
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-10 mt-18 mb-10">
+          <div class="bg-black/80 rounded-3xl relative">
+            <div
+              class="bg-[url(https://coderthemes.com/landinger/assets/1-yw7xe-kG.png)] rounded-3xl mask-b-from-7% mask-b-to-95% bg-cover h-120"
+            >
+              <div
+                class="absolute p-7 text-white flex flex-col items-start justify-between h-full"
+              >
+                <div>
+                  <img
+                    src="https://coderthemes.com/landinger/assets/1-DN6Djsz9.svg"
+                    alt=""
+                  />
+                </div>
+                <div class=" ">
+                  <p class="font-semibold text-xl">
+                    "Efficiency redefined, productivity amplified."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="bg-green-300 h-120 rounded-3xl relative">
+              <div
+                class="absolute p-7 text-black flex flex-col justify-between items-start h-full"
+              >
+                <div class="w-30">
+                  <img
+                    src="https://coderthemes.com/landinger/assets/4-BUCeMoND.svg"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div>
+                    <span
+                      ><i class="fa-solid fa-star" style="color: #d3c954"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-star" style="color: #d3c954"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-star" style="color: #d3c954"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-star" style="color: #d3c954"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-star" style="color: #d3c954"></i
+                    ></span>
+                  </div>
+                  <p class="text-xl font-normal mt-1">
+                    Landinger has revolutionized the way we operate. The
+                    automated reporting feature alone has saved us countless
+                    hours each month.
+                  </p>
+                  <p class="font-semibold text-xl mt-4">John Doe</p>
+                  <p class="font-normal">SEO expert at Coderthemes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-black/80 rounded-3xl relative">
+            <div
+              class="bg-[url(https://coderthemes.com/landinger/assets/2-DaN8LXv9.png)] mask-b-from-7% mask-b-to-95% bg-cover h-120 rounded-3xl relative"
+            >
+              <div
+                class="absolute p-7 text-white flex flex-col justify-between items-start h-full"
+              >
+                <div>
+                  <img
+                    src="https://coderthemes.com/landinger/assets/1-DN6Djsz9.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="font-semibold text-xl">
+                    "Person she control of to beginnings view looked eyes Than
+                    continues."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-20 bg-yellow-50">
+      <div
+        class="container mx-auto bg-[url(https://coderthemes.com/landinger/assets/5-Cr0i60MZ.png)] rounded-3xl relative bg-cover w-full h-100"
+      >
+        <div
+          class="items-center absolute top-2 text-white p-10 gap-50 grid grid-cols-2"
+        >
+          <div class="">
+            <p class="text-3xl font-semibold">
+              Be the first to know about new features,improvements, and special
+              promotions.
+            </p>
+          </div>
+          <div class="flex items-center justify-between">
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="info@example.com"
+                class="w-full bg-white text-black font-semibold px-40 py-4 rounded-2xl ps-4"
+              />
+            </div>
+            <button>
+              <a
+                href="#"
+                class="inline-block bg-black px-8 rounded-3xl font-medium py-4 hover:text-green-400 transition duration-500"
+                >Submit</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+
+    <section class="bg-gray-800 py-20">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-3 gap-5 text-white">
+          <div>
+            <div>
+              <div>
+                <img
+                  src="https://coderthemes.com/landinger/assets/landinger-light-BVnxQ-Hz.svg"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="font-medium pt-5">
+                Trusted solutions for your growing business
+              </div>
+            </div>
+            <div class="flex pt-20">
+              <div>
+                <h2 class="font-bold text-5xl">4.8</h2>
+              </div>
+              <div class="ps-6">
+                <div class="font-medium">
+                  <span> <i class="fa-solid fa-star text-yellow-400"></i></span>
+                  <span> <i class="fa-solid fa-star text-yellow-400"></i></span>
+                  <span> <i class="fa-solid fa-star text-yellow-400"></i></span>
+                  <span> <i class="fa-solid fa-star text-yellow-400"></i></span>
+                  <span> <i class="fa-solid fa-star text-yellow-400"></i></span>
+                </div>
+                <div class="pt-1">
+                  <span>Best Rated Company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ps-10">
+            <h2 class="text-xl capitalize font-semibold">Pages</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <ul class="capitalize mt-5 font-medium">
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block text-green-400 transition duration-500"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >home 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >home 3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >product 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >product 3</a
+                  >
+                </li>
+              </ul>
+              <ul class="capitalize mt-5 font-medium ps-10">
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >about</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >request a demo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pt-2 inline-block hover:text-green-400 transition duration-500"
+                    >privacy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ps-30">
+            <h2 class="text-xl capitalize font-semibold">contact us</h2>
+            <div class="mt-6 font-semibold">
+              <p class="">
+                1234 Innovation drive, suite 100, tech city, CA 94043
+              </p>
+              <p class="hover:text-green-400 pt-4 transition duration-500">
+                (123) 456-7890
+              </p>
+              <p
+                class="underline hover:text-green-400 pt-2 transition duration-500"
+              >
+                example@gmail.com
+              </p>
+            </div>
+            <div class="pt-8 flex items-center">
+              <span class="font-semibold text-xl capitalize pe-5 inline-block"
+                >👋 Follow us:</span
+              >
+              <div class="">
+                <a href="#" class="text-xl pe-2"
+                  ><i class="fa-solid fa-paperclip"></i
+                ></a>
+                <a href="#" class="text-xl pe-2"
+                  ><i class="fa-solid fa-basketball"></i
+                ></a>
+                <a href="#" class="text-xl pe-2"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-xl pe-2"
+                  ><i class="fa-brands fa-square-x-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="text-gray-600 mt-10" />
+        <div class="pt-10 flex justify-between text-white">
+          <div>
+            © 2025 <a href="3" class="underline font-semibold"> Landinger.</a>
+          </div>
+          <div>
+            Crafted with ❤️ By
+            <a href="#" class="underline font-semibold"> Coderthemes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

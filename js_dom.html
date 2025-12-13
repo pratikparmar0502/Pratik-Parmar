@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT DOM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 1 -->
+    <!-- <h1 class="demo" id="unique">hello world</h1>
+
+    <button onclick="change()">Click me</button>
+    <button onclick="change1()">Click me</button>
+    <button onclick="change2()">Click me</button>
+    <button onclick="change3()">Click me</button>
+    <button onclick="change4()">Click me</button> -->
+
+    <!-- 2 -->
+
+    <!-- <h1 id="counter">1</h1>
+
+    <button onclick="change()">+ 1</button>
+    <button onclick="change1()">- 1</button>
+    <button onclick="change2()">+ 5</button>
+    <button onclick="change3()">- 5</button> -->
+
+    <!-- 3 -->
+    <!-- <style>
+      .demo {
+        background-color: aqua;
+        width: 25%;
+        height: 50px;
+        padding: 10px;
+      }
+    </style>
+
+    <h1 class="demo">
+      <button class="bulb">OFF</button>
+    </h1>
+
+    <p class="demo1">
+      <button onclick="changeon()">ON</button>
+      <button onclick="changeoff()">OFF</button>
+    </p> -->
+
+    <!-- 4 -->
+    <!-- 
+    <style>
+      .demo {
+        background-color: aqua;
+        width: 25%;
+        height: 30px;
+        padding: 10px;
+      }
+    </style>
+
+    <div class="demo">
+      <button onclick="change()" class="on">OFF</button>
+    </div> -->
+
+    <!-- 5 -->
+
+    <!-- <style>
+      body {
+        background-color: rgb(147, 178, 252);
+      }
+      .menu {
+        font-size: 40px;
+        padding: 3px 10px;
+        border-radius: 7px;
+        background-color: white;
+      }
+
+      .demo {
+        background-color: rgb(176, 228, 233);
+        width: 20%;
+        height: 600px;
+        border-radius: 10px;
+        display: none;
+      }
+    </style>
+
+    <button class="menu" onclick="change()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="demo">
+      <button class="close" onclick="change2()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div> -->
+    <!-- 
+    <style>
+      .off {
+        display: flex;
+      }
+      .on {
+        display: flex;
+        display: none;
+      }
+
+      .bulb {
+        font-size: 30px;
+        margin-left: 60px;
+      }
+    </style>
+
+    <div class="off">
+      <img src="/images/bulb_off.jpg" alt="" />
+    </div>
+    <div class="on">
+      <img src="/images/bulb_on.jpg" alt="" />
+    </div>
+
+    <button class="bulb" onclick="change()">ON</button>
+ -->
+
+    <!-- 7 -->
+
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background-color: rgb(186, 209, 201);
+      }
+
+      .div2,
+      .div3,
+      .div4 {
+        display: none;
+      }
+
+      nav {
+        background-color: white;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 60px;
+      }
+
+      ul li a {
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        font-size: 20px;
+      }
+
+      ul li a:hover {
+        color: #ffbc06 !important;
+        transition: 0.2s;
+      }
+
+      .firstactive {
+        color: #ffbc06;
+        border-bottom: 2px solid #ffbc06;
+      }
+
+      .div1 {
+        background-color: white;
+        margin-top: 10px;
+        width: 35%;
+        margin-left: 20px;
+      }
+
+      .div1_1 {
+        padding: 20px;
+      }
+
+      .div2 {
+        background-color: white;
+        margin-top: 10px;
+        width: 35%;
+        margin-left: 20px;
+        color: black;
+      }
+
+      .div2_1 {
+        padding: 20px;
+      }
+
+      .div2_1 a {
+        color: black;
+      }
+
+      .div2_1 li {
+        margin-bottom: 10px;
+      }
+
+      .div3 {
+        background-color: white;
+        margin-top: 10px;
+        width: 35%;
+        margin-left: 20px;
+        color: black;
+      }
+
+      .div3_1 {
+        padding: 20px;
+      }
+
+      .div3_1 a {
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .div3_1 li {
+        margin-bottom: 10px;
+      }
+
+      .div4 {
+        margin-top: 10px;
+        margin-left: 20px;
+      } */
+    </style>
+
+    <!-- <nav>
+      <ul>
+        <li onclick="change1()">
+          <a href="#" class="firstactive a1">Overview</a>
+        </li>
+        <li onclick="change2()"><a href="#" class="a2">Course Cover</a></li>
+        <li onclick="change3()">
+          <a href="#" class="a3">Career Opportunities</a>
+        </li>
+        <li onclick="change4()"><a href="#" class="a4">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <div class="div1">
+      <div class="div1_1">
+        <h2>Why should you learn Node JS?</h2>
+        <p>Node.js is the future of real-time web applications.</p>
+        <p>
+          NodeJS allows two-way communication between the client and the server.
+        </p>
+        <p>NodeJS training in Surat to learn how to build an application.</p>
+      </div>
+    </div>
+
+    <div class="div2">
+      <div class="div2_1">
+        <h3>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-angle-down"></i> Pre-Learning Programming
+              Concepts</a
+            >
+          </li>
+        </h3>
+        <h3>
+          <li>
+            <a href="#"><i class="fa-solid fa-angle-down"></i> Javascript</a>
+          </li>
+        </h3>
+        <h3>
+          <li>
+            <a href="#"><i class="fa-solid fa-angle-down"></i> Node js</a>
+          </li>
+        </h3>
+        <h3>
+          <li>
+            <a href="#"><i class="fa-solid fa-angle-down"></i> Angular js</a>
+          </li>
+        </h3>
+        <h3>
+          <li>
+            <a href="#"><i class="fa-solid fa-angle-down"></i> React js</a>
+          </li>
+        </h3>
+      </div>
+    </div>
+
+    <div class="div3">
+      <div class="div3_1">
+        <li><a href="#">Web Developer</a></li>
+        <li><a href="#">JS Developer</a></li>
+        <li><a href="#">MEAN Stack Developer</a></li>
+        <li><a href="#">NodeJS Developer </a></li>
+        <li><a href="#">MERN Stack Developer </a></li>
+      </div>
+    </div>
+
+    <div class="div4">
+      <img src="/images/cdmi_review.png" width="40%" alt="" />
+    </div> -->
+
+    <!-- <style></style>
+
+  <input type="text" name="" id="get1" placeholder="Name" /><br><br>
+  <input type="number" name="" id="get2" placeholder="Age" min="1" max="120" /><br><br>
+  <input type="password" name="" id="get3" placeholder="Password" minlength="8" maxlength="12" /><br><br>
+  <input type="email" name="" id="get4" placeholder="Email" /><br><br>
+
+  <button onclick="change()">Submit</button>
+
+  <h1 id="set1"></h1> -->
+
+    <script>
+      // document.getElementsByClassName("demo")[0].style.color = "red";
+      // document.getElementsByClassName("demo")[0].style.backgroundColor =
+      //   "yellow";
+      // document.getElementsByClassName("demo")[0].style.textAlign = "center";
+      // document.getElementById("unique").innerHTML =
+      //   " hello world from js id ";
+      // document.getElementById("unique").style.textTransform = "uppercase";
+
+      //  1
+
+      // function change() {
+      //   document.getElementsByTagName("h1")[0].innerHTML =
+      //     " hello world from js ";
+      //   document.getElementsByClassName("demo")[0].style.color = "red";
+      // }
+
+      // function change1() {
+      //   document.getElementsByTagName("h1")[0].innerHTML =
+      //     " hello world from js ";
+      //   document.getElementsByClassName("demo")[0].style.backgroundColor =
+      //     "aqua";
+      // }
+
+      // function change2() {
+      //   document.getElementsByTagName("h1")[0].innerHTML =
+      //     " hello world from js ";
+      //   document.getElementsByClassName("demo")[0].style.textAlign = "center";
+      // }
+
+      // function change3() {
+      //   document.getElementsByTagName("h1")[0].innerHTML =
+      //     " hello world from js ";
+      //   document.getElementsByClassName("demo")[0].style.fontSize = "20px";
+      // }
+
+      // function change4() {
+      //   document.getElementsByTagName("h1")[0].innerHTML =
+      //     " hello world from js ";
+      //   document.getElementsByClassName("demo")[0].style.textTransform =
+      //     "uppercase";
+      // }
+
+      // 2
+
+      // function change() {
+      //   let a = document.getElementById("counter").innerHTML;
+      //   a++;
+      //   document.getElementById("counter").innerHTML = a;
+      // }
+
+      // function change1() {
+      //   let a = document.getElementById("counter").innerHTML;
+      //   a--;
+      //   document.getElementById("counter").innerHTML = a;
+      // }
+
+      // function change2() {
+      //   let a = document.getElementById("counter").innerHTML;
+
+      //   for (let i = 0; i < 5; i++) {
+      //     a++;
+      //   }
+      //   document.getElementById("counter").innerHTML = a;
+      // }
+
+      // function change3() {
+      //   let a = document.getElementById("counter").innerHTML;
+      //   a = a - 5;
+      //   document.getElementById("counter").innerHTML = a;
+      // }
+
+      // 3
+
+      // function changeon() {
+      // document.getElementsByClassName("bulb")[0].innerHTML = "ON";
+      // document.getElementsByClassName("bulb")[0].style.color = "white";
+      // document.getElementsByClassName("bulb")[0].style.backgroundColor =
+      //   "green";
+      // document.getElementsByClassName("bulb")[0].style.transform =
+      //   "translateX(100px)";
+      // document.getElementsByClassName("bulb")[0].style.transition =
+      //   "transform 0.7s ";
+      // }
+
+      // function changeoff() {
+      //   document.getElementsByClassName("bulb")[0].innerHTML = "OFF";
+      //   document.getElementsByClassName("bulb")[0].style.color = "white";
+      //   document.getElementsByClassName("bulb")[0].style.backgroundColor =
+      //     "red";
+      // document.getElementsByClassName("bulb")[0].style.transform =
+      //   "translateX(0px)";
+      // document.getElementsByClassName("bulb")[0].style.transition =
+      //   "transform 0.7s ";
+      // }
+
+      // 4
+
+      // function change() {
+      //   let a = document.getElementsByClassName("on")[0].innerHTML;
+
+      //   if ("OFF" === a) {
+      //     document.getElementsByClassName("on")[0].innerHTML = "ON";
+      //     document.getElementsByClassName("on")[0].style.color = "white";
+      //     document.getElementsByClassName("on")[0].style.backgroundColor =
+      //       "green";
+      //     document.getElementsByClassName("on")[0].style.transform =
+      //       "translateX(100px)";
+      // document.getElementsByClassName("on")[0].style.transition =
+      //   "transform 0.7s ";
+      //   } else {
+      //     document.getElementsByClassName("on")[0].innerHTML = "OFF";
+      //     document.getElementsByClassName("on")[0].style.color = "white";
+      //     document.getElementsByClassName("on")[0].style.backgroundColor =
+      //       "red";
+      //     document.getElementsByClassName("on")[0].style.transform =
+      //       "translateX(0px)";
+      //     document.getElementsByClassName("on")[0].style.transition =
+      //       "transform 0.7s ";
+      //   }
+      // }
+
+      // 5
+
+      // function change() {
+      //   document.getElementsByClassName("demo")[0].style.display = "block";
+
+      //   document.getElementsByClassName("demo")[0].style.transition = " 0.7s";
+      // }
+
+      // function change2() {
+      //   document.getElementsByClassName("demo")[0].style.display = "none";
+      // }
+
+      // 6
+
+      //   function change() {
+      //     let a = document.getElementsByClassName("bulb")[0].innerHTML;
+
+      //     if ("ON" === a) {
+      //       document.getElementsByClassName("bulb")[0].innerHTML = "OFF";
+
+      //       document.getElementsByClassName("off")[0].style.display = "none";
+      //       document.getElementsByClassName("on")[0].style.display = "block";
+      //     } else {
+      //       document.getElementsByClassName("bulb")[0].innerHTML = "ON";
+      //       document.getElementsByClassName("off")[0].style.display = "block";
+      //       document.getElementsByClassName("on")[0].style.display = "none";
+      //     }
+      //   }
+
+      // 7
+
+      // function change1() {
+      //   document.getElementsByClassName("div1")[0].style.display = "block";
+      //   document.getElementsByClassName("div2")[0].style.display = "none";
+      //   document.getElementsByClassName("div3")[0].style.display = "none";
+      //   document.getElementsByClassName("div4")[0].style.display = "none";
+      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd =
+      //     "3px solid #ffbc06";
+      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
+
+      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a2")[0].style.color = "black";
+      //   document.getElementsByClassName("a3")[0].style.color = "black";
+      //   document.getElementsByClassName("a4")[0].style.color = "black";
+      //   document.getElementsByClassName("a1")[0].style.color = "#ffbc06";
+      // }
+
+      // function change2() {
+      //   document.getElementsByClassName("div2")[0].style.display = "block";
+      //   document.getElementsByClassName("div1")[0].style.display = "none";
+      //   document.getElementsByClassName("div3")[0].style.display = "none";
+      //   document.getElementsByClassName("div4")[0].style.display = "none";
+      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd =
+      //     "3px solid #ffbc06";
+      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a3")[0].style.color = "black";
+      //   document.getElementsByClassName("a4")[0].style.color = "black";
+      //   document.getElementsByClassName("a1")[0].style.color = "black";
+      //   document.getElementsByClassName("a2")[0].style.color = "#ffbc06";
+      // }
+      // function change3() {
+      //   document.getElementsByClassName("div3")[0].style.display = "block";
+      //   document.getElementsByClassName("div1")[0].style.display = "none";
+      //   document.getElementsByClassName("div2")[0].style.display = "none";
+      //   document.getElementsByClassName("div4")[0].style.display = "none";
+      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd =
+      //     "3px solid #ffbc06";
+      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a4")[0].style.color = "black";
+      //   document.getElementsByClassName("a1")[0].style.color = "black";
+      //   document.getElementsByClassName("a2")[0].style.color = "black";
+      //   document.getElementsByClassName("a3")[0].style.color = "#ffbc06";
+      // }
+      // function change4() {
+      //   document.getElementsByClassName("div4")[0].style.display = "block";
+      //   document.getElementsByClassName("div2")[0].style.display = "none";
+      //   document.getElementsByClassName("div3")[0].style.display = "none";
+      //   document.getElementsByClassName("div1")[0].style.display = "none";
+      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd =
+      //     "3px solid #ffbc06";
+      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
+      //   document.getElementsByClassName("a1")[0].style.color = "black";
+      //   document.getElementsByClassName("a3")[0].style.color = "black";
+      //   document.getElementsByClassName("a2")[0].style.color = "black";
+      //   document.getElementsByClassName("a4")[0].style.color = "#ffbc06";
+      // }
+
+      // 8
+
+      // function change() {
+      //   let data1 = document.getElementById("get1").value;
+      //   let data2 = document.getElementById("get2").value;
+      //   let data3 = document.getElementById("get3").value;
+      //   let data4 = document.getElementById("get4").value;
+      //   // console.log(data);
+      //   let newbtn = document.createElement("li");
+      //   // console.log(newbtn);
+      //   newbtn.innerHTML =
+      //     data1 +
+      //     "<br>" +
+      //     data2 +
+      //     "<br>" +
+      //     data3 +
+      //     "<br>" +
+      //     data4 +
+      //     "&nbsp <button onclick='del1data(this)'>Delete</button>" +
+      //     " <button onclick='updatedata1(this)'>Update</button>";
+      //   document.getElementById("set1").appendChild(newbtn);
+
+      //   if (data1 === "" || data2 === "" || data3 === "" || data4 === "") {
+      //     alert("Please fill all the fields !");
+      //     newbtn.remove();
+      //   }
+
+      //   if (data2 < 1 || data2 > 120) {
+      //     alert("Please enter a valid age between 1 and 120 !");
+      //     data2.remove();
+      //   }
+
+      //   if (data3.length <= 8 || data3.length >= 12) {
+      //     alert("Please enter a valid password between 8 and 12 characters !");
+      //     data3.remove();
+      //   }
+
+      //   if (!data4.includes("@") || !data4.includes(".com")) {
+      //     alert("Please enter a valid email ( ex. : abc@xyz.com ) !");
+      //     newbtn.remove();
+      //   }
+
+      //   document.getElementById("get1").value = "";
+      //   document.getElementById("get2").value = "";
+      //   document.getElementById("get3").value = "";
+      //   document.getElementById("get4").value = "";
+      // }
+
+      // function del1data(e) {
+      //   e.parentElement.remove();
+      // }
+
+      // function updatedata1(a) {
+      //   let store1 = a.parentElement;
+      //   var olddata1 = store1.childNodes[0].textContent;
+      //   var olddata2 = store1.childNodes[2].textContent;
+      //   var olddata3 = store1.childNodes[4].textContent;
+      //   var olddata4 = store1.childNodes[6].textContent;
+
+      //   var newdata = (document.getElementById("get1").value = olddata1);
+      //   var newdata = (document.getElementById("get2").value = olddata2);
+      //   var newdata = (document.getElementById("get3").value = olddata3);
+      //   var newdata = (document.getElementById("get4").value = olddata4);
+      //   store1.remove();
+      // }
+
+      // sessionStorage.setItem("name", "pratik");
+      // var data2 = sessionStorage.getItem("name");
+      // console.log(data2);
+
+      // localStorage.setItem("name", "pratik");
+      // var data2 = localStorage.getItem("name");
+      // localStorage.removeItem("name");
+      // sessionStorage.removeItem("name");
+
+      // async function demo() {
+
+      //   let data = await fetch("https://fakestoreapi.com/products");
+
+      //   let data2 = await data.json(data);
+
+      //   console.log(data2);
+      // }
+
+      // demo();
+    </script>
+  </body>
+</html>

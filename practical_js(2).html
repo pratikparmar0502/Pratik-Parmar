@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical js</title>
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .header-main {
+        width: 100%;
+        background-color: rgb(63, 122, 225);
+      }
+
+      .w-1140 {
+        width: 1140px;
+        margin: auto;
+      }
+
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 50px;
+        background-color: rgb(63, 122, 225);
+        color: white;
+        padding: 0px 15px;
+      }
+
+      .nav-list a:hover {
+        color: rgb(128, 163, 223);
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      .nav-list {
+        display: flex;
+      }
+
+      .nav-list a {
+        margin: 0px 10px;
+        cursor: pointer;
+      }
+
+      .logo a {
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      body {
+        background-color: rgb(159, 171, 215);
+      }
+
+      .btn1 {
+        padding: 10px 12px;
+        display: none;
+      }
+
+      .btn2 {
+        padding: 10px 12px;
+        display: none;
+      }
+
+      @media (max-width: 430px) {
+        .w-1140 {
+          width: 100%;
+        }
+
+        .nav-list {
+          display: none;
+          position: absolute;
+          top: 50px;
+          left: 300px;
+          color: white;
+          text-align: center;
+          background-color: rgb(63, 122, 225);
+        }
+
+        .btn1 {
+          display: block;
+        }
+
+        .btn2 {
+          display: none;
+          position: absolute;
+          top: 6px;
+          right: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="w-1140">
+        <div class="navbar">
+          <div class="logo">
+            <a>Mywebsite</a>
+          </div>
+          <div class="nav-list">
+            <a>Home</a>
+            <a>About</a>
+            <a>Contact</a>
+            <a>Project</a>
+            <a>Services</a>
+          </div>
+          <button class="btn1" onclick="change1()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="btn2" onclick="change2()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      function change1() {
+        document.querySelector(".nav-list").style.display = "flex";
+        document.querySelector(".nav-list").style.flexDirection = "column";
+        document.querySelector(".nav-list").style.width = "30%";
+        document.querySelector(".btn1").style.display = "none";
+        document.querySelector(".btn2").style.display = "block";
+      }
+
+      function change2() {
+        document.querySelector(".nav-list").style.display = "none";
+        document.querySelector(".btn1").style.display = "block";
+        document.querySelector(".btn2").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
