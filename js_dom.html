@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JAVASCRIPT DOM</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <!-- 1 -->
-    <!-- <h1 class="demo" id="unique">hello world</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAVASCRIPT DOM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- 1 -->
+  <!-- <h1 class="demo" id="unique">hello world</h1>
 
     <button onclick="change()">Click me</button>
     <button onclick="change1()">Click me</button>
@@ -20,17 +18,17 @@
     <button onclick="change3()">Click me</button>
     <button onclick="change4()">Click me</button> -->
 
-    <!-- 2 -->
+  <!-- 2 -->
 
-    <!-- <h1 id="counter">1</h1>
+  <!-- <h1 id="counter">1</h1>
 
     <button onclick="change()">+ 1</button>
     <button onclick="change1()">- 1</button>
     <button onclick="change2()">+ 5</button>
     <button onclick="change3()">- 5</button> -->
 
-    <!-- 3 -->
-    <!-- <style>
+  <!-- 3 -->
+  <!-- <style>
       .demo {
         background-color: aqua;
         width: 25%;
@@ -48,8 +46,8 @@
       <button onclick="changeoff()">OFF</button>
     </p> -->
 
-    <!-- 4 -->
-    <!-- 
+  <!-- 4 -->
+  <!-- 
     <style>
       .demo {
         background-color: aqua;
@@ -63,9 +61,9 @@
       <button onclick="change()" class="on">OFF</button>
     </div> -->
 
-    <!-- 5 -->
+  <!-- 5 -->
 
-    <!-- <style>
+  <!-- <style>
       body {
         background-color: rgb(147, 178, 252);
       }
@@ -93,7 +91,7 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div> -->
-    <!-- 
+  <!-- 
     <style>
       .off {
         display: flex;
@@ -119,10 +117,10 @@
     <button class="bulb" onclick="change()">ON</button>
  -->
 
-    <!-- 7 -->
+  <!-- 7 -->
 
-    <style>
-      /* * {
+  <style>
+    /* * {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -225,9 +223,9 @@
         margin-top: 10px;
         margin-left: 20px;
       } */
-    </style>
+  </style>
 
-    <!-- <nav>
+  <!-- <nav>
       <ul>
         <li onclick="change1()">
           <a href="#" class="firstactive a1">Overview</a>
@@ -298,7 +296,7 @@
       <img src="/images/cdmi_review.png" width="40%" alt="" />
     </div> -->
 
-    <!-- <style></style>
+  <!-- <style></style>
 
   <input type="text" name="" id="get1" placeholder="Name" /><br><br>
   <input type="number" name="" id="get2" placeholder="Age" min="1" max="120" /><br><br>
@@ -309,307 +307,308 @@
 
   <h1 id="set1"></h1> -->
 
-    <script>
-      // document.getElementsByClassName("demo")[0].style.color = "red";
-      // document.getElementsByClassName("demo")[0].style.backgroundColor =
-      //   "yellow";
-      // document.getElementsByClassName("demo")[0].style.textAlign = "center";
-      // document.getElementById("unique").innerHTML =
-      //   " hello world from js id ";
-      // document.getElementById("unique").style.textTransform = "uppercase";
+  <script>
+    // document.getElementsByClassName("demo")[0].style.color = "red";
+    // document.getElementsByClassName("demo")[0].style.backgroundColor =
+    //   "yellow";
+    // document.getElementsByClassName("demo")[0].style.textAlign = "center";
+    // document.getElementById("unique").innerHTML =
+    //   " hello world from js id ";
+    // document.getElementById("unique").style.textTransform = "uppercase";
 
-      //  1
+    //  1
 
-      // function change() {
-      //   document.getElementsByTagName("h1")[0].innerHTML =
-      //     " hello world from js ";
-      //   document.getElementsByClassName("demo")[0].style.color = "red";
-      // }
+    // function change() {
+    //   document.getElementsByTagName("h1")[0].innerHTML =
+    //     " hello world from js ";
+    //   document.getElementsByClassName("demo")[0].style.color = "red";
+    // }
 
-      // function change1() {
-      //   document.getElementsByTagName("h1")[0].innerHTML =
-      //     " hello world from js ";
-      //   document.getElementsByClassName("demo")[0].style.backgroundColor =
-      //     "aqua";
-      // }
+    // function change1() {
+    //   document.getElementsByTagName("h1")[0].innerHTML =
+    //     " hello world from js ";
+    //   document.getElementsByClassName("demo")[0].style.backgroundColor =
+    //     "aqua";
+    // }
 
-      // function change2() {
-      //   document.getElementsByTagName("h1")[0].innerHTML =
-      //     " hello world from js ";
-      //   document.getElementsByClassName("demo")[0].style.textAlign = "center";
-      // }
+    // function change2() {
+    //   document.getElementsByTagName("h1")[0].innerHTML =
+    //     " hello world from js ";
+    //   document.getElementsByClassName("demo")[0].style.textAlign = "center";
+    // }
 
-      // function change3() {
-      //   document.getElementsByTagName("h1")[0].innerHTML =
-      //     " hello world from js ";
-      //   document.getElementsByClassName("demo")[0].style.fontSize = "20px";
-      // }
+    // function change3() {
+    //   document.getElementsByTagName("h1")[0].innerHTML =
+    //     " hello world from js ";
+    //   document.getElementsByClassName("demo")[0].style.fontSize = "20px";
+    // }
 
-      // function change4() {
-      //   document.getElementsByTagName("h1")[0].innerHTML =
-      //     " hello world from js ";
-      //   document.getElementsByClassName("demo")[0].style.textTransform =
-      //     "uppercase";
-      // }
+    // function change4() {
+    //   document.getElementsByTagName("h1")[0].innerHTML =
+    //     " hello world from js ";
+    //   document.getElementsByClassName("demo")[0].style.textTransform =
+    //     "uppercase";
+    // }
 
-      // 2
+    // 2
 
-      // function change() {
-      //   let a = document.getElementById("counter").innerHTML;
-      //   a++;
-      //   document.getElementById("counter").innerHTML = a;
-      // }
+    // function change() {
+    //   let a = document.getElementById("counter").innerHTML;
+    //   a++;
+    //   document.getElementById("counter").innerHTML = a;
+    // }
 
-      // function change1() {
-      //   let a = document.getElementById("counter").innerHTML;
-      //   a--;
-      //   document.getElementById("counter").innerHTML = a;
-      // }
+    // function change1() {
+    //   let a = document.getElementById("counter").innerHTML;
+    //   a--;
+    //   document.getElementById("counter").innerHTML = a;
+    // }
 
-      // function change2() {
-      //   let a = document.getElementById("counter").innerHTML;
+    // function change2() {
+    //   let a = document.getElementById("counter").innerHTML;
 
-      //   for (let i = 0; i < 5; i++) {
-      //     a++;
-      //   }
-      //   document.getElementById("counter").innerHTML = a;
-      // }
+    //   for (let i = 0; i < 5; i++) {
+    //     a++;
+    //   }
+    //   document.getElementById("counter").innerHTML = a;
+    // }
 
-      // function change3() {
-      //   let a = document.getElementById("counter").innerHTML;
-      //   a = a - 5;
-      //   document.getElementById("counter").innerHTML = a;
-      // }
+    // function change3() {
+    //   let a = document.getElementById("counter").innerHTML;
+    //   a = a - 5;
+    //   document.getElementById("counter").innerHTML = a;
+    // }
 
-      // 3
+    // 3
 
-      // function changeon() {
-      // document.getElementsByClassName("bulb")[0].innerHTML = "ON";
-      // document.getElementsByClassName("bulb")[0].style.color = "white";
-      // document.getElementsByClassName("bulb")[0].style.backgroundColor =
-      //   "green";
-      // document.getElementsByClassName("bulb")[0].style.transform =
-      //   "translateX(100px)";
-      // document.getElementsByClassName("bulb")[0].style.transition =
-      //   "transform 0.7s ";
-      // }
+    // function changeon() {
+    // document.getElementsByClassName("bulb")[0].innerHTML = "ON";
+    // document.getElementsByClassName("bulb")[0].style.color = "white";
+    // document.getElementsByClassName("bulb")[0].style.backgroundColor =
+    //   "green";
+    // document.getElementsByClassName("bulb")[0].style.transform =
+    //   "translateX(100px)";
+    // document.getElementsByClassName("bulb")[0].style.transition =
+    //   "transform 0.7s ";
+    // }
 
-      // function changeoff() {
-      //   document.getElementsByClassName("bulb")[0].innerHTML = "OFF";
-      //   document.getElementsByClassName("bulb")[0].style.color = "white";
-      //   document.getElementsByClassName("bulb")[0].style.backgroundColor =
-      //     "red";
-      // document.getElementsByClassName("bulb")[0].style.transform =
-      //   "translateX(0px)";
-      // document.getElementsByClassName("bulb")[0].style.transition =
-      //   "transform 0.7s ";
-      // }
+    // function changeoff() {
+    //   document.getElementsByClassName("bulb")[0].innerHTML = "OFF";
+    //   document.getElementsByClassName("bulb")[0].style.color = "white";
+    //   document.getElementsByClassName("bulb")[0].style.backgroundColor =
+    //     "red";
+    // document.getElementsByClassName("bulb")[0].style.transform =
+    //   "translateX(0px)";
+    // document.getElementsByClassName("bulb")[0].style.transition =
+    //   "transform 0.7s ";
+    // }
 
-      // 4
+    // 4
 
-      // function change() {
-      //   let a = document.getElementsByClassName("on")[0].innerHTML;
+    // function change() {
+    //   let a = document.getElementsByClassName("on")[0].innerHTML;
 
-      //   if ("OFF" === a) {
-      //     document.getElementsByClassName("on")[0].innerHTML = "ON";
-      //     document.getElementsByClassName("on")[0].style.color = "white";
-      //     document.getElementsByClassName("on")[0].style.backgroundColor =
-      //       "green";
-      //     document.getElementsByClassName("on")[0].style.transform =
-      //       "translateX(100px)";
-      // document.getElementsByClassName("on")[0].style.transition =
-      //   "transform 0.7s ";
-      //   } else {
-      //     document.getElementsByClassName("on")[0].innerHTML = "OFF";
-      //     document.getElementsByClassName("on")[0].style.color = "white";
-      //     document.getElementsByClassName("on")[0].style.backgroundColor =
-      //       "red";
-      //     document.getElementsByClassName("on")[0].style.transform =
-      //       "translateX(0px)";
-      //     document.getElementsByClassName("on")[0].style.transition =
-      //       "transform 0.7s ";
-      //   }
-      // }
+    //   if ("OFF" === a) {
+    //     document.getElementsByClassName("on")[0].innerHTML = "ON";
+    //     document.getElementsByClassName("on")[0].style.color = "white";
+    //     document.getElementsByClassName("on")[0].style.backgroundColor =
+    //       "green";
+    //     document.getElementsByClassName("on")[0].style.transform =
+    //       "translateX(100px)";
+    // document.getElementsByClassName("on")[0].style.transition =
+    //   "transform 0.7s ";
+    //   } else {
+    //     document.getElementsByClassName("on")[0].innerHTML = "OFF";
+    //     document.getElementsByClassName("on")[0].style.color = "white";
+    //     document.getElementsByClassName("on")[0].style.backgroundColor =
+    //       "red";
+    //     document.getElementsByClassName("on")[0].style.transform =
+    //       "translateX(0px)";
+    //     document.getElementsByClassName("on")[0].style.transition =
+    //       "transform 0.7s ";
+    //   }
+    // }
 
-      // 5
+    // 5
 
-      // function change() {
-      //   document.getElementsByClassName("demo")[0].style.display = "block";
+    // function change() {
+    //   document.getElementsByClassName("demo")[0].style.display = "block";
 
-      //   document.getElementsByClassName("demo")[0].style.transition = " 0.7s";
-      // }
+    //   document.getElementsByClassName("demo")[0].style.transition = " 0.7s";
+    // }
 
-      // function change2() {
-      //   document.getElementsByClassName("demo")[0].style.display = "none";
-      // }
+    // function change2() {
+    //   document.getElementsByClassName("demo")[0].style.display = "none";
+    // }
 
-      // 6
+    // 6
 
-      //   function change() {
-      //     let a = document.getElementsByClassName("bulb")[0].innerHTML;
+    //   function change() {
+    //     let a = document.getElementsByClassName("bulb")[0].innerHTML;
 
-      //     if ("ON" === a) {
-      //       document.getElementsByClassName("bulb")[0].innerHTML = "OFF";
+    //     if ("ON" === a) {
+    //       document.getElementsByClassName("bulb")[0].innerHTML = "OFF";
 
-      //       document.getElementsByClassName("off")[0].style.display = "none";
-      //       document.getElementsByClassName("on")[0].style.display = "block";
-      //     } else {
-      //       document.getElementsByClassName("bulb")[0].innerHTML = "ON";
-      //       document.getElementsByClassName("off")[0].style.display = "block";
-      //       document.getElementsByClassName("on")[0].style.display = "none";
-      //     }
-      //   }
+    //       document.getElementsByClassName("off")[0].style.display = "none";
+    //       document.getElementsByClassName("on")[0].style.display = "block";
+    //     } else {
+    //       document.getElementsByClassName("bulb")[0].innerHTML = "ON";
+    //       document.getElementsByClassName("off")[0].style.display = "block";
+    //       document.getElementsByClassName("on")[0].style.display = "none";
+    //     }
+    //   }
 
-      // 7
+    // 7
 
-      // function change1() {
-      //   document.getElementsByClassName("div1")[0].style.display = "block";
-      //   document.getElementsByClassName("div2")[0].style.display = "none";
-      //   document.getElementsByClassName("div3")[0].style.display = "none";
-      //   document.getElementsByClassName("div4")[0].style.display = "none";
-      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd =
-      //     "3px solid #ffbc06";
-      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
+    // function change1() {
+    //   document.getElementsByClassName("div1")[0].style.display = "block";
+    //   document.getElementsByClassName("div2")[0].style.display = "none";
+    //   document.getElementsByClassName("div3")[0].style.display = "none";
+    //   document.getElementsByClassName("div4")[0].style.display = "none";
+    //   document.getElementsByClassName("a1")[0].style.borderBlockEnd =
+    //     "3px solid #ffbc06";
+    //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
 
-      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a2")[0].style.color = "black";
-      //   document.getElementsByClassName("a3")[0].style.color = "black";
-      //   document.getElementsByClassName("a4")[0].style.color = "black";
-      //   document.getElementsByClassName("a1")[0].style.color = "#ffbc06";
-      // }
+    //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a2")[0].style.color = "black";
+    //   document.getElementsByClassName("a3")[0].style.color = "black";
+    //   document.getElementsByClassName("a4")[0].style.color = "black";
+    //   document.getElementsByClassName("a1")[0].style.color = "#ffbc06";
+    // }
 
-      // function change2() {
-      //   document.getElementsByClassName("div2")[0].style.display = "block";
-      //   document.getElementsByClassName("div1")[0].style.display = "none";
-      //   document.getElementsByClassName("div3")[0].style.display = "none";
-      //   document.getElementsByClassName("div4")[0].style.display = "none";
-      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd =
-      //     "3px solid #ffbc06";
-      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a3")[0].style.color = "black";
-      //   document.getElementsByClassName("a4")[0].style.color = "black";
-      //   document.getElementsByClassName("a1")[0].style.color = "black";
-      //   document.getElementsByClassName("a2")[0].style.color = "#ffbc06";
-      // }
-      // function change3() {
-      //   document.getElementsByClassName("div3")[0].style.display = "block";
-      //   document.getElementsByClassName("div1")[0].style.display = "none";
-      //   document.getElementsByClassName("div2")[0].style.display = "none";
-      //   document.getElementsByClassName("div4")[0].style.display = "none";
-      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd =
-      //     "3px solid #ffbc06";
-      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a4")[0].style.color = "black";
-      //   document.getElementsByClassName("a1")[0].style.color = "black";
-      //   document.getElementsByClassName("a2")[0].style.color = "black";
-      //   document.getElementsByClassName("a3")[0].style.color = "#ffbc06";
-      // }
-      // function change4() {
-      //   document.getElementsByClassName("div4")[0].style.display = "block";
-      //   document.getElementsByClassName("div2")[0].style.display = "none";
-      //   document.getElementsByClassName("div3")[0].style.display = "none";
-      //   document.getElementsByClassName("div1")[0].style.display = "none";
-      //   document.getElementsByClassName("a4")[0].style.borderBlockEnd =
-      //     "3px solid #ffbc06";
-      //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
-      //   document.getElementsByClassName("a1")[0].style.color = "black";
-      //   document.getElementsByClassName("a3")[0].style.color = "black";
-      //   document.getElementsByClassName("a2")[0].style.color = "black";
-      //   document.getElementsByClassName("a4")[0].style.color = "#ffbc06";
-      // }
+    // function change2() {
+    //   document.getElementsByClassName("div2")[0].style.display = "block";
+    //   document.getElementsByClassName("div1")[0].style.display = "none";
+    //   document.getElementsByClassName("div3")[0].style.display = "none";
+    //   document.getElementsByClassName("div4")[0].style.display = "none";
+    //   document.getElementsByClassName("a2")[0].style.borderBlockEnd =
+    //     "3px solid #ffbc06";
+    //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a3")[0].style.color = "black";
+    //   document.getElementsByClassName("a4")[0].style.color = "black";
+    //   document.getElementsByClassName("a1")[0].style.color = "black";
+    //   document.getElementsByClassName("a2")[0].style.color = "#ffbc06";
+    // }
+    // function change3() {
+    //   document.getElementsByClassName("div3")[0].style.display = "block";
+    //   document.getElementsByClassName("div1")[0].style.display = "none";
+    //   document.getElementsByClassName("div2")[0].style.display = "none";
+    //   document.getElementsByClassName("div4")[0].style.display = "none";
+    //   document.getElementsByClassName("a3")[0].style.borderBlockEnd =
+    //     "3px solid #ffbc06";
+    //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a4")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a4")[0].style.color = "black";
+    //   document.getElementsByClassName("a1")[0].style.color = "black";
+    //   document.getElementsByClassName("a2")[0].style.color = "black";
+    //   document.getElementsByClassName("a3")[0].style.color = "#ffbc06";
+    // }
+    // function change4() {
+    //   document.getElementsByClassName("div4")[0].style.display = "block";
+    //   document.getElementsByClassName("div2")[0].style.display = "none";
+    //   document.getElementsByClassName("div3")[0].style.display = "none";
+    //   document.getElementsByClassName("div1")[0].style.display = "none";
+    //   document.getElementsByClassName("a4")[0].style.borderBlockEnd =
+    //     "3px solid #ffbc06";
+    //   document.getElementsByClassName("a1")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a2")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a3")[0].style.borderBlockEnd = "none";
+    //   document.getElementsByClassName("a1")[0].style.color = "black";
+    //   document.getElementsByClassName("a3")[0].style.color = "black";
+    //   document.getElementsByClassName("a2")[0].style.color = "black";
+    //   document.getElementsByClassName("a4")[0].style.color = "#ffbc06";
+    // }
 
-      // 8
+    // 8
 
-      // function change() {
-      //   let data1 = document.getElementById("get1").value;
-      //   let data2 = document.getElementById("get2").value;
-      //   let data3 = document.getElementById("get3").value;
-      //   let data4 = document.getElementById("get4").value;
-      //   // console.log(data);
-      //   let newbtn = document.createElement("li");
-      //   // console.log(newbtn);
-      //   newbtn.innerHTML =
-      //     data1 +
-      //     "<br>" +
-      //     data2 +
-      //     "<br>" +
-      //     data3 +
-      //     "<br>" +
-      //     data4 +
-      //     "&nbsp <button onclick='del1data(this)'>Delete</button>" +
-      //     " <button onclick='updatedata1(this)'>Update</button>";
-      //   document.getElementById("set1").appendChild(newbtn);
+    // function change() {
+    //   let data1 = document.getElementById("get1").value;
+    //   let data2 = document.getElementById("get2").value;
+    //   let data3 = document.getElementById("get3").value;
+    //   let data4 = document.getElementById("get4").value;
+    //   // console.log(data);
+    //   let newbtn = document.createElement("li");
+    //   // console.log(newbtn);
+    //   newbtn.innerHTML =
+    //     data1 +
+    //     "<br>" +
+    //     data2 +
+    //     "<br>" +
+    //     data3 +
+    //     "<br>" +
+    //     data4 +
+    //     "&nbsp <button onclick='del1data(this)'>Delete</button>" +
+    //     " <button onclick='updatedata1(this)'>Update</button>";
+    //   document.getElementById("set1").appendChild(newbtn);
 
-      //   if (data1 === "" || data2 === "" || data3 === "" || data4 === "") {
-      //     alert("Please fill all the fields !");
-      //     newbtn.remove();
-      //   }
+    //   if (data1 === "" || data2 === "" || data3 === "" || data4 === "") {
+    //     alert("Please fill all the fields !");
+    //     newbtn.remove();
+    //   }
 
-      //   if (data2 < 1 || data2 > 120) {
-      //     alert("Please enter a valid age between 1 and 120 !");
-      //     data2.remove();
-      //   }
+    //   if (data2 < 1 || data2 > 120) {
+    //     alert("Please enter a valid age between 1 and 120 !");
+    //     data2.remove();
+    //   }
 
-      //   if (data3.length <= 8 || data3.length >= 12) {
-      //     alert("Please enter a valid password between 8 and 12 characters !");
-      //     data3.remove();
-      //   }
+    //   if (data3.length <= 8 || data3.length >= 12) {
+    //     alert("Please enter a valid password between 8 and 12 characters !");
+    //     data3.remove();
+    //   }
 
-      //   if (!data4.includes("@") || !data4.includes(".com")) {
-      //     alert("Please enter a valid email ( ex. : abc@xyz.com ) !");
-      //     newbtn.remove();
-      //   }
+    //   if (!data4.includes("@") || !data4.includes(".com")) {
+    //     alert("Please enter a valid email ( ex. : abc@xyz.com ) !");
+    //     newbtn.remove();
+    //   }
 
-      //   document.getElementById("get1").value = "";
-      //   document.getElementById("get2").value = "";
-      //   document.getElementById("get3").value = "";
-      //   document.getElementById("get4").value = "";
-      // }
+    //   document.getElementById("get1").value = "";
+    //   document.getElementById("get2").value = "";
+    //   document.getElementById("get3").value = "";
+    //   document.getElementById("get4").value = "";
+    // }
 
-      // function del1data(e) {
-      //   e.parentElement.remove();
-      // }
+    // function del1data(e) {
+    //   e.parentElement.remove();
+    // }
 
-      // function updatedata1(a) {
-      //   let store1 = a.parentElement;
-      //   var olddata1 = store1.childNodes[0].textContent;
-      //   var olddata2 = store1.childNodes[2].textContent;
-      //   var olddata3 = store1.childNodes[4].textContent;
-      //   var olddata4 = store1.childNodes[6].textContent;
+    // function updatedata1(a) {
+    //   let store1 = a.parentElement;
+    //   var olddata1 = store1.childNodes[0].textContent;
+    //   var olddata2 = store1.childNodes[2].textContent;
+    //   var olddata3 = store1.childNodes[4].textContent;
+    //   var olddata4 = store1.childNodes[6].textContent;
 
-      //   var newdata = (document.getElementById("get1").value = olddata1);
-      //   var newdata = (document.getElementById("get2").value = olddata2);
-      //   var newdata = (document.getElementById("get3").value = olddata3);
-      //   var newdata = (document.getElementById("get4").value = olddata4);
-      //   store1.remove();
-      // }
+    //   var newdata = (document.getElementById("get1").value = olddata1);
+    //   var newdata = (document.getElementById("get2").value = olddata2);
+    //   var newdata = (document.getElementById("get3").value = olddata3);
+    //   var newdata = (document.getElementById("get4").value = olddata4);
+    //   store1.remove();
+    // }
 
-      // sessionStorage.setItem("name", "pratik");
-      // var data2 = sessionStorage.getItem("name");
-      // console.log(data2);
+    // sessionStorage.setItem("name", "pratik");
+    // var data2 = sessionStorage.getItem("name");
+    // console.log(data2);
 
-      // localStorage.setItem("name", "pratik");
-      // var data2 = localStorage.getItem("name");
-      // localStorage.removeItem("name");
-      // sessionStorage.removeItem("name");
+    // localStorage.setItem("name", "pratik");
+    // var data2 = localStorage.getItem("name");
+    // localStorage.removeItem("name");
+    // sessionStorage.removeItem("name");
 
-      // async function demo() {
+    // async function demo() {
 
-      //   let data = await fetch("https://fakestoreapi.com/products");
+    //   let data = await fetch("https://fakestoreapi.com/products");
 
-      //   let data2 = await data.json(data);
+    //   let data2 = await data.json(data);
 
-      //   console.log(data2);
-      // }
+    //   console.log(data2);
+    // }
 
-      // demo();
-    </script>
-  </body>
+    // demo();
+  </script>
+</body>
+
 </html>
