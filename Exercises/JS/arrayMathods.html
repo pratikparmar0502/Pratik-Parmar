@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Mathods</title>
+</head>
+
+<body>
+    <script>
+
+        // const users = ["Rahul", "Amit", "Sonia", "Priya", "Vikram"];
+        // console.log(users.length);
+        // console.log(users.at(-1));
+
+        // how to make array empty in one line
+        // users.length = 0;
+        // console.log(users); // []
+
+        // // ========================================
+
+        // const products = ["Laptop", "Mobile", "Watch", "Camera", "Headphones"];
+        // console.log(products.sort());
+        // console.log(products.reverse());
+
+        // // ========================================
+
+        // const gadgets = ["iPad", "Smart TV", "Drone"];
+        // const i = gadgets.values();
+        // console.log("i:", i);
+
+        // let index = 0;
+        // for (const element of i) {
+        //     console.log(`${index}:${element}`);
+        //     index++;
+        // }
+
+        // // ========================================
+
+        // const newsTitle = ["demo1", "demo2", "demo3"];
+        // console.log(newsTitle.sort().reverse());
+
+        // // Agar array empty hai, toh at(0) kya return karega ? Check karke batayiye.
+        // // => undefined
+
+        // const arr = [10, 20, 30, 40, 50]
+        // console.log(arr.fill(100, 1, 4));
+
+        // // ===============================
+
+        // const name = "Pratik";
+        // console.log(Array.from(name));
+
+        // // ===============================
+
+        // const lang = ["HTML", "CSS", "JS"]
+        // console.log(lang.join(" - "));
+
+        // // ===============================
+
+        // const demo = [10, 20, 30, 40, 50];
+        // while (demo.length > 2) {
+        //     console.log(demo.pop());
+        // }
+
+        // const demo = ["Person1", "Person2", "Person3"];
+        // demo.push("Person4");
+        // console.log(demo);
+        // demo.shift()
+        // console.log(demo);
+
+        // // ===============================
+
+        // const num = [10, 20, 30];
+        // num.forEach((item) => console.log("Price :", item))
+
+        // const nums = ["Task B", "Task C"]
+        // nums.unshift("Task A");
+        // console.log(nums);
+        // nums.push("Task D");
+        // console.log(nums);
+
+        // // =========================
+
+        // const arr = [1, 2, 3, 4, 5, 6]
+        // arr.copyWithin(0,4,6)
+        // console.log(arr);
+
+        // const boys = ["Rahul", "Amit"]
+        // const girls = ["Sonia", "Priya"]
+        // const students = boys.concat(girls)
+        // console.log(students);
+
+        // // ===========================
+
+        // const marks = [40, 55, 20, 80]
+        // const failed = marks.some((i) => i < 33)
+        // console.log(failed);
+
+        // // ==========================
+
+        // const day = ["Monday", "Tuesday", "Thursday"]
+        // day.splice(2, 0, "Wednesday")
+        // console.log(day);
+
+        // // ============================
+
+        // const num2 = [1, [2, [3, 4]]]
+        // const demo = num2.flat(2)
+        // console.log(demo);
+
+        // // ============================
+
+        // const fruits = ["apple", "orange", "apple", "banana"]
+        // console.log(fruits.lastIndexOf("apple"));
+
+        // =======================================
+
+        // const num = [60, 70, 80, 90]
+        // console.log(num.every((i) => i >= 60));
+
+        // // =======================================
+
+        // const arr = ["A", "B", "C", "D", "E"]
+        // const newArr = arr.slice(1, 4)
+        // console.log(newArr);
+
+        // const numArr = [10, 20, 30]
+        // const discount = numArr.flatMap((item) => [item, item * 0.1])
+        // console.log(discount);
+
+
+        // // =============================
+
+        // const arrs = [{ id: 1, name: "A" }, { id: 2, name: "B" }]
+        // console.log(arrs.findIndex((i) => i.id === 2));
+
+        // // ========================================
+
+        // const demo1 = "Red";
+        // const demo2 = "Green";
+        // const demo3 = "Yellow";
+
+        // console.log(
+        //     Array.of(demo1, demo2, demo3)
+        // );
+
+        // const searchArr = [{ name: "TV", price: 200 }, { name: "Mic", price: 50 }]
+        // console.log(searchArr.find((i) => i.price === 50));
+
+        // // =======================
+
+        // const check = ["Admin", "Editor", "Subscriber"]
+        // console.log(check.includes("User"));
+
+        // // =========================
+
+        // const sum = [250, 400, 150, 200]
+        // console.log(sum.reduce((total, n) => {
+        //     return total + n
+        // }, 0));
+
+        // const data = { name: "Rahul" }
+        // // const data = []
+        // console.log(Array.isArray(data));
+
+        // // ======================
+
+        // const filterMathod = [{ name: "Phone", category: "Electronics" }, { name: "Shirt", category: "Fashion" }, { name: "Laptop", category: "Electronics" }]
+        // console.log(filterMathod.filter((item) => item.category === "Electronics"));
+
+        // // ===========================
+
+        // const mapMathod = [100, 200, 300]
+        // console.log(mapMathod.map((item) => "Rs." + item));
+
+        // // ===================
+
+        // ============= 🔥 The "Real-World" Final Challenge(All -in -One) ===================================================================================
+
+        // const inventory = [
+        //     { id: 1, name: "Laptop", price: 50000, stock: 5, category: "Electronics" },
+        //     { id: 2, name: "Shirt", price: 1200, stock: 0, category: "Fashion" },
+        //     { id: 3, name: "Watch", price: 3000, stock: 10, category: "Electronics" },
+        //     { id: 4, name: "Shoes", price: 2500, stock: 8, category: "Fashion" },
+        //     { id: 5, name: "Phone", price: 15000, stock: 0, category: "Electronics" }
+        // ];
+
+        // const stock = inventory.filter((i) => i.stock > 0)
+        // // console.log(stock);
+
+        // const priceCheck = inventory.map((item) => {
+        //     let discountPrice = item.price * 0.1;
+        //     return { name: item.name, discountPrice: discountPrice }
+        // }).reduce((acc, item) => {
+        //     return acc + item.discountPrice;
+        // }, 0)
+        // console.log(priceCheck);
+
+        // const watchAll = inventory.find((i) => i.name === "Watch");
+        // console.log(watchAll);
+
+        // const checkPrice = inventory.every((i) => i.price > 500);
+        // console.log(checkPrice);
+
+
+        // REST OPERATOR
+
+        // const multiplyAll = (multiple, ...num) => {
+        //     return num.forEach(item => item * multiple)
+        // }
+
+        // console.log(multiplyAll(10, 20, 30));
+
+
+        // const marks = [40, 50, 60];
+        // const result = marks.forEach(m => m + 5);
+        // console.log(result);
+
+        // CLOSER FUNCTION
+
+        // function outer() {
+        //     var a = 10;
+        //     return function inner() {
+        //         a++;
+        //         console.log(a);
+        //     }
+        // }
+
+        // const counter = outer();
+        // counter()
+        // counter()
+
+        // let a = 10;
+        // let b = 20;
+
+        // a = a + b // 30
+        // b = a - b // 10
+        // a = a - b // 20
+
+        // console.log(a, b);
+
+        // // This function simulates a real API call. Do not change it.
+        // const fetchUserData = (userId) => {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             if (userId === 101) {
+        //                 resolve({
+        //                     id: 101,
+        //                     fullName: "  pratik parmar  ",
+        //                     skills: ["javascript", "react", "node"],
+        //                     stats: { followers: 500, following: 200 }
+        //                 });
+        //             } else {
+        //                 reject("Error: User Not Found!");
+        //             }
+        //         }, 1500);
+        //     });
+        // };
+
+        // const getUserDashboard = async (id) => {
+        //     try {
+        //         const res = await fetchUserData(id);
+
+        //         const { fullName, skills, stats: { followers } } = res
+        //         const cleanUp = fullName.trim().toUpperCase();
+        //         const allSkills = [...skills, "System Design"];
+        //         console.log(`User : ${cleanUp} has ${followers} followers.`);
+        //         console.log("Updated SKills : ", allSkills);
+        //     } catch (error) {
+        //         if (id !== 101) {
+        //             console.error(error);
+        //         }
+        //     }
+        // }
+
+        // console.log(getUserDashboard(101));
+        // console.log(getUserDashboard(99));
+
+        // const checkRoomAvailability = new Promise((resolve, reject) => {
+        //     let success = true;
+        //     if (success) {
+        //         resolve("Room is available");
+        //     } else {
+        //         reject("Fully booked!")
+        //     }
+        // })
+
+        // const demo = async () => {
+        //     try {
+        //         let res = await checkRoomAvailability;
+        //         console.log(res);
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
+
+        // demo();
+
+
+
+    </script>
+</body>
+
+</html>
