@@ -812,6 +812,26 @@
         // }
         // console.log(result);
 
+        const currentBooking = {
+            id: "BK-99",
+            guestName: "Pratik Parmar",
+            roomNo: 202,
+            price: 5000,
+            isAvailable: false
+        };
+
+        const processCheckout = (booking) => {
+            const updateBooking = { ...booking, isAvailable: true, lastCleaned: new Date() };
+            const { price, id, ...publicDetailed } = updateBooking;
+            return publicDetailed;
+        }
+
+        console.log(processCheckout(currentBooking));
+
+
+
+
+
     </script>
 </body>
 
