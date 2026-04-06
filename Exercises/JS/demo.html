@@ -9,72 +9,71 @@
 
 <body>
 
-    <!-- <input type="text" id="myInput" placeholder="Add task here...">
+    <!-- <input type="text" name="" id="input" placeholder="Enter your task">
     <button id="addBtn">Add</button>
-    <ul id="myList">
-    </ul>
 
-    <script>
-        let inputBox = document.querySelector("#myInput");
-        let btn = document.querySelector("#addBtn");
-        let myList = document.querySelector("#myList");
-        let editTarget = null; // Ye global hi rahega
+    <ul id="list"></ul> -->
 
-        btn.addEventListener("click", function () {
+    // let inputTask = document.querySelector("#input")
+    // let addBtn = document.querySelector("#addBtn")
+    // let list = document.querySelector("#list")
+    // let editId = null
 
-            let inputValue = inputBox.value;
-            if (inputValue === "") {
-                alert("Please fill the field!!");
-                return;
-            }
+    // addBtn.addEventListener("click", function () {
+    // if (inputTask.value === "") {
+    // alert("Please enter the task!")
+    // return;
+    // }
+    // if (editId) {
+    // editId.firstChild.textContent = inputTask.value;
+    // editId = null
+    // addBtn.textContent = "Add"
+    // inputTask.value = ""
+    // return
+    // }
 
-            // 🌟 STEP 1: Check karo hum Update kar rahe hain ya Add
-            if (editTarget !== null) {
-                // Sirf purane span ka text badlo, naya li mat banao!
-                editTarget.innerText = inputValue;
+    // let inputValue = inputTask.value;
+    // console.log(inputValue);
 
-                // Sab kuch wapas normal karo
-                btn.innerText = "Add";
-                editTarget = null;
-                inputBox.value = "";
-            }
-            else {
-                // ➕ CREATE LOGIC (Jo aapne likha tha, wo yahan else mein aayega)
-                let li = document.createElement("li");
-                let taskText = document.createElement("span");
-                taskText.innerText = inputValue;
-                li.appendChild(taskText);
-                myList.appendChild(li);
-                inputBox.value = "";
+    // let li = document.createElement("li")
+    // let span = document.createElement("span")
+    // span.textContent = inputValue
+    // console.log(span);
 
-                // --- Delete Button ---
-                let delBtn = document.createElement("button");
-                delBtn.innerText = "Delete";
-                delBtn.style.marginLeft = "10px";
-                li.appendChild(delBtn);
-                delBtn.addEventListener("click", function () {
-                    confirm("Are you sure you want to delete?");
-                    li.remove();
-                });
+    // let delBtn = document.createElement("button")
+    // delBtn.textContent = "Delete"
 
-                // --- Edit Button ---
-                let editBtn = document.createElement("button");
-                editBtn.innerText = "Edit";
-                editBtn.style.marginLeft = "10px";
-                li.appendChild(editBtn);
+    // let editBtn = document.createElement("button")
+    // editBtn.textContent = "Edit"
 
-                editBtn.addEventListener("click", function () {
-                    inputBox.value = taskText.innerText;
-                    btn.innerText = "Update";
-                    // 🌟 Nishana set kar diya us span par
-                    editTarget = taskText;
-                });
-            }
-        });
-    </script> -->
+    // list.append(span)
+    // li.append(delBtn)
+    // li.append(editBtn)
+
+    // list.append(li);
+
+    // inputTask.value = ""
+
+    // delBtn.addEventListener("click", function () {
+    // if (window.confirm("Are you sure you want to delete?")) {
+    // li.remove()
+    // } else {
+    // return;
+    // }
+    // })
+
+    // editBtn.addEventListener("click", function () {
+    // inputTask.value = li.firstChild.textContent;
+    // console.log(inputTask.value);
+    // editId = li;
+    // console.log(editId);
+    // addBtn.textContent = "Update"
+    // })
+
+    // })
 
 
-    <table border="1" id="albumTable" style="width: 100%; text-align: left; border-collapse: collapse;">
+    < table border="1" id="albumTable" style="width: 100%; text-align: left; border-collapse: collapse;">
         <thead>
             <tr style="background-color: #f2f2f2;">
                 <th>ID</th>
@@ -84,7 +83,7 @@
         </thead>
         <tbody id="tableBody">
         </tbody>
-    </table>
+    </>
 
     <script>
 
@@ -107,11 +106,11 @@
 
                 let rowsHtml = data.map((item, index) => {
                     return `
-                        <tr>
-                            <td>${item.id}</td>
-                            <td>${item.title}</td>
-                            <td><button onclick="deleteAlbum(${item.id})">Delete</button></td>
-                        </tr>
+                <tr>
+                    <td>${item.id}</td>
+                    <td>${item.title}</td>
+                    <td><button onclick="deleteAlbum(${item.id})">Delete</button></td>
+                </tr>
                     `;
                 }).join("");
 
@@ -124,6 +123,9 @@
         }
 
         getData()
+
+
+
 
 
     </script>
